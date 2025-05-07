@@ -455,7 +455,7 @@ body {
 .sec05_container .sec05_img02 {
   position: absolute;
   left: 50%;
-  top: 520%;
+  top: 500%;
 }
 .sec05_container .sec05_text_and_button {
   padding: 39px 0 0 420px;
@@ -466,6 +466,9 @@ body {
 
 .footer_container .icon_title {
   gap: 15px;
+  padding: 27px 0 27px 312px;
+}
+.footer_container .border_tb {
   border-style: solid;
   border-top-color: #EEEEEE;
   border-bottom-color: #EEEEEE;
@@ -473,5 +476,38 @@ body {
   border-left: none;
   border-top-width: 2px;
   border-bottom-width: 2px;
-  padding: 27px 0 27px 312px;
+}
+.footer_container .footer_title {
+  padding-left: 302px;
+  padding-bottom: 26px;
+}
+.footer_container .footer_title p {
+  padding-left: 10px;
+}
+.footer_container .footer_text {
+  padding-left: 312px;
+  padding-top: 60px;
+  padding-bottom: 228px;
+}
+.footer_container .footer_text h1 {
+  color: #fff;
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+.footer_container .footer_text h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 15px;
+}
+.footer_container .footer_text p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+.footer_container .bg-green {
+  background-color: #1C6343;
 }/*# sourceMappingURL=style.css.map */
