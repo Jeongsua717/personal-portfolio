@@ -8,59 +8,56 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" alt="logo-img" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavUser"
-                aria-controls="navbarNavUser" aria-expanded="false" aria-label="Toggle navigation">
-                <i class='bx bx-menu'></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavUser">
-                <ul class="navbar-nav ms-auto navbar__menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Product</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Brand Story</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Event</a>
-                    </li>
-                </ul>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo.png" alt="logo-img" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavUser"
+                    aria-controls="navbarNavUser" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavUser">
+                    <ul class="navbar-nav ms-auto navbar__menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brand Story</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Event</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- nav -->
-    <section class="hero-banner">
-        <div class="hero_container">
-            <div class="row">
-                <div class="col-md-6 hero-img order-md-first">
-                    <div class="hero_content">
-                        <div class="hero_title">
-                            <h1>
-                                크림에서 찾은<br>
-                                피부 고민 솔루션<br>
-                                3가지 타입</h1>
-                        </div>
-                        <div class="btn">
-                            <a href="#">자세히 보기</a>
+        </nav>
+        <!-- nav -->
+        <section class="hero-banner">
+            <div class="hero_container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="hero_content">
+                            <div class="hero_title">
+                                <h1>
+                                    크림에서 찾은<br>
+                                    피부 고민 솔루션</h1>
+                                <p>진정, 미백, 탄력 기능을 가진 크림</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 hero-img order-md-last">
-                    <img src="assets/images/sec01_cream_img.png" class="img-fluid" alt="메인 배너 크림 이미지">
-                </div>
             </div>
-        </div>
+    </div>
     </section>
     <!-- hero-banner -->
     <section class="sec02">
@@ -82,23 +79,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row center">
                     <div class="sec02_sub_title">
                         <h5>Core Value</h5>
                     </div>
                 </div>
-                <div class="row gx-3">
-                    <div class="col-md-4">
+                <div class="row gx-3 justify-content-center">
+                    <div class="col-md-3">
                         <div class="sec02__img">
                             <img src="assets/images/sec03_img_01.png" class="img-fluid" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="sec02__img">
                             <img src="assets/images/sec03_img_02.png" class="img-fluid" alt="">
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="sec02__img">
                             <img src="assets/images/sec03_img_03.png" class="img-fluid" alt="">
                         </div>
@@ -118,13 +115,33 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="sec03_img">
-                        <div class="sec03_sub_title">
-                            <h1>Natural</h1>
-                            <h2>자연의 순수함<br>
-                                두피를 보호해주는</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide row sec03_img">
+                        <div class="col-md-12">
+                            <div class="sec03_sub_title">
+                                <h1>hella co.</h1>
+                                <h2>자연유래 성분으로<br>
+                                    피부를 촉촉하게 되찾아주는</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide row sec03_img02">
+                        <div class="col-md-12">
+                            <div class="sec03_sub_title">
+                                <h1>Huxley</h1>
+                                <h2>물처럼 가볍게<br>
+                                    끈적임 없이 산뜻하게</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide row sec03_img03">
+                        <div class="col-md-12">
+                            <div class="sec03_sub_title">
+                                <h1>hella co.</h1>
+                                <h2>자연유래 성분으로<br>
+                                    피부를 촉촉하게 되찾아주는</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,8 +150,8 @@
     </section>
     <!-- section03 -->
 
-    <section>
-        <div class="container ">
+    <section class="sec04">
+        <div class="container">
             <div class="row gx-3 text-center">
                 <div class="col-md-12">
                     <div class="sec04_title">
@@ -156,8 +173,8 @@
                     <div class="sec04_img">
                         <img src="assets/images/sec05_img_02.png" alt="">
                         <div class="sec04_sub_title">
-                            <h2>바이오 리바이탈 로션</h2>
-                            <p>피부 장벽 개선 로션</p>
+                            <h2>볼륨 부스트 콜라겐 앰플</h2>
+                            <p>밀도 높은 탄력감</p>
                         </div>
                     </div>
                 </div>
@@ -165,8 +182,8 @@
                     <div class="sec04_img">
                         <img src="assets/images/sec05_img_03.png" alt="">
                         <div class="sec04_sub_title">
-                            <h2>바이오 리바이탈 로션</h2>
-                            <p>피부 장벽 개선 로션</p>
+                            <h2>릴리프 폼클렌저</h2>
+                            <p>모공 속까지 말끔 세정</p>
                         </div>
                     </div>
                 </div>
@@ -174,8 +191,8 @@
                     <div class="sec04_img">
                         <img src="assets/images/sec05_img_04.png" alt="">
                         <div class="sec04_sub_title">
-                            <h2>바이오 리바이탈 로션</h2>
-                            <p>피부 장벽 개선 로션</p>
+                            <h2>수딩 베리어 크림</h2>
+                            <p>유수분 밸런스 조절</p>
                         </div>
                     </div>
                 </div>
@@ -185,10 +202,10 @@
 
     <!-- section04 -->
 
-    <section>
+    <section class="sec05">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 text-center sec05_title">
                     <h1>Event</h1>
                 </div>
             </div>
@@ -197,25 +214,47 @@
                     <img src="assets/images/sec06_img_01.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-md-6">
-                    <div class="event_btn">
-                        <p>이벤트</p>
+                    <div class="d-flex">
+                        <div class="event_btn">
+                            <p>이벤트</p>
+                        </div>
+                        <div class="sec05_search_btn">
+                            <a href="#">
+                                <p>+ MORE</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="sec05_search_btn">
-                        <a href="#">
-                            <p>+ MORE</p>
-                        </a>
+                    <div class="sec05_sub_title p-0">
+                        <h1>[이즈밍]</h1>
+                        <h2>이즈밍 신제품 체험단 모집</h2>
+                        <p>2025.04.15</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <h1>[순연]</h1>
-                    <h2>가정의 달 선물세트 기획전</h2>
-                    <p>2025.05.01</p>
+                    <div class="col-md-6 d-flex padding-tl">
+                        <div class="event_btn">
+                            <p>이벤트</p>
+                        </div>
+                        <div class="sec05_search_btn">
+                            <a href="#">
+                                <p>+ MORE</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="sec05_sub_title">
+                            <h1>[순연]</h1>
+                            <h2>가정의 달 선물세트 기획전</h2>
+                            <p>2025.05.01</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="assets/images/sec06_img_02.png" alt="" class="img-fluid" style="position: relative; top:-100px">
-    
+                    <img src="assets/images/sec06_img_02.png" alt="" class="img-fluid"
+                        style="position: relative; top:-100px">
+
                 </div>
             </div>
         </div>
@@ -266,6 +305,7 @@
 
     <script src="assets/js/jquery.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

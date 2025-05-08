@@ -190,38 +190,35 @@
     }
 }
 body{
-    background-image: url('../images/sec01_bg.png');
-    background-repeat: no-repeat;
-    height: 750px;
     overflow-x: hidden;
     width: 100%;
     font-family: 'Pretendard';
+}
+.wrapper {
+  background-image: url('../images/sec01_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 830px;
 }
 .hero-banner{
     .hero_title h1{
         color: #3c3c3c;
         font-weight: 500;
-        font-size: 45px;
+        font-size: 50px;
         line-height: 140%;
         margin: 0;
+        letter-spacing: 0.03em;
     }
-    .btn{
-        margin-top: 55px;
-        padding: 8px 25px;
-        border-style: solid;
-        border-color: #4f4f4f;
-        border-radius: 30px;
-        font-size: 22px;
-        letter-spacing: 1%;
+    .hero_title p{
+      color: #3c3c3c;
+      font-weight: 500;
+      padding-top: 25px;
+      font-size: 25px;
+      letter-spacing: 0.03em;
     }
     .hero_content{
-        padding: 100px 185px 0 410px;
-    }
-    .btn a{
-        text-decoration-line: none;
-    }
-    .hero-img{
-        padding: 77px 0;
+        padding: 235px 0 0 410px;
     }
 }
 // hero banner
@@ -236,7 +233,7 @@ body{
         font-family: "Poppins", sans-serif;
         font-size: 58px;
         line-height: 140%;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         color: #3c3c3c;
     }
     .sec02_sub_title h2{
@@ -245,7 +242,7 @@ body{
         font-size: 30px;
         font-weight: 600;
         line-height: 140%;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         padding-right: 714px;
         margin-bottom: 15px;
         margin-top: 49px;
@@ -257,11 +254,11 @@ body{
         font-size: 45px;
         margin-bottom: 30px;
         line-height: 140%;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
     }
     .sec02_sub_title h4{
         line-height: 140%;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         font-weight: 500;
         color: #3c3c3c;
         font-size: 28px;
@@ -279,7 +276,7 @@ body{
             position: relative;
             color: #4f4f4f;
             font-weight: 500;
-            letter-spacing: 1%;
+            letter-spacing: 0.01em;
             &::after { 
                 content: '';
                 display: block;
@@ -298,20 +295,19 @@ body{
         font-size: 30px;
         font-weight: 600;
         line-height: 140%;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         margin-bottom: 30px;
         margin-top: 85px;
         text-align: center;
     }
     .sec02__img{
         padding: 0;
+        padding-bottom: 20px;
     }
     .sec02__img img {
         width: 100%;
-        margin-left: 2%;
         border-radius: 20px;
     }
-
 }
 // section02
 .sec03_container{
@@ -324,34 +320,53 @@ body{
         font-family: "Poppins", sans-serif;
         font-size: 58px;
         line-height: 140%;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         color: #3c3c3c;
   }
   .sec03_img{
     background-image: url('../images/sec04_img_01.png');
     background-repeat: no-repeat;
-    height: 803px;
+    width: 100%;
+    min-height: 803px;
+    background-position: center center;
+    background-size: cover;
+  }
+  .sec03_img02{
+    background-image: url('../images/sec04_img_02.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 803px;
+    background-position: center center;
+    background-size: cover;
+  }
+  .sec03_img03{
+    background-image: url('../images/sec04_img_01.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 803px;
+    background-position: center center;
+    background-size: cover;
   }
   .sec03_sub_title{
-    padding: 100px 0 0 424px;
+    padding: 270px 0 0 352px;
   }
   .sec03_sub_title h1{
     font-family: 'Dancing In The Rain';
-    color: #1C6343;
-    font-size: 40px;
+    color: #fff;
+    font-size: 50px;
     line-height: 140%;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     margin-bottom: 20px;
   }
   .sec03_sub_title h2{
     font-weight: 700;
-    font-size: 40px;
-    color: #1C6343;
+    font-size: 50px;
+    color: #fff;
     line-height: 140%;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
   }
 }
-.sec04_container{
+.sec04{
   background-color: #FFFAFA;
   .sec04_title h1{
         margin-top: 100px;
@@ -361,7 +376,7 @@ body{
         font-family: "Poppins", sans-serif;
         font-size: 58px;
         line-height: 140%;
-        letter-spacing: 3%;
+        letter-spacing: 0.03em;
         color: #3c3c3c;
   }
   .sec04_img{
@@ -369,19 +384,16 @@ body{
     margin: 0;
   }
   .sec04_img img{
-    margin-left: 100%;
     width: 100%;
-  }
-  .sec04_sub_title{
-    text-align: center;
-    position: relative;
-    left: 100%;
   }
   .sec04_sub_title h2{
     font-size: 25px;
     font-weight: 600;
     color: #3c3c3c;
     padding: 25px 0 15px 0;
+  }
+  .sec04_sub_title{
+    text-align: center;
   }
   .sec04_sub_title p{
     font-size: 20px;
@@ -391,7 +403,7 @@ body{
   }
 }
 // section04
-.sec05_container{
+.sec05{
   background-color: #FFFAFA;
   .sec05_title h1{
     margin-top: 100px;
@@ -401,22 +413,14 @@ body{
     font-family: "Poppins", sans-serif;
     font-size: 58px;
     line-height: 140%;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     color: #3c3c3c;
-  }
-  .sec05_img{
-    padding-left: 20%;
-  }
-  .sec05__img{
-    padding-top: 1012px;
-    padding-left: 20%;
   }
   .event_btn{
     padding: 22px 12px;
     width: 65px;
     height: 65px;
     background-color: #B8D2E6;
-    margin-left: 69px;
   }
   .event_btn p{
     font-size: 15px;
@@ -430,8 +434,11 @@ body{
     font-size: 18px;
     font-weight: 700;
     color: #A1A1A1;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     line-height: 140%;
+  }
+  .padding-tl{
+    padding: 39px 0 0 69px;
   }
   .sec05_sub_title{
     padding: 0 0 100px 69px;
@@ -441,7 +448,7 @@ body{
     color: #9C9C9C;
     font-weight: 500;
     line-height: 140%;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     padding-bottom: 5px;
   }
   .sec05_sub_title h2{
@@ -449,20 +456,16 @@ body{
     font-size: 35px;
     font-weight: 600;
     line-height: 140%;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     padding-bottom: 11px;
+    white-space: nowrap;
   }
   .sec05_sub_title p{
     color: #9C9C9C;
     font-size: 18px;
     font-weight: 400;
     line-height: 140%;
-    letter-spacing: 3%;
-  }
-  .sec05_img02{
-    position: absolute;
-    left: 50%;
-    top: 500%;
+    letter-spacing: 0.03em;
   }
   .sec05_text_and_button{
     padding: 39px 0 0 420px;
