@@ -203,7 +203,7 @@ body {
 
 .hero-banner .hero_title h1 {
   color: #3c3c3c;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 50px;
   line-height: 140%;
   margin: 0;
@@ -217,7 +217,7 @@ body {
   letter-spacing: 0.03em;
 }
 .hero-banner .hero_content {
-  padding: 235px 0 0 410px;
+  padding: 235px 0 0 312px;
 }
 
 .sec02_container {
@@ -262,8 +262,22 @@ body {
   font-size: 28px;
   margin-bottom: 100px;
 }
-.sec02_container .sec02_img {
+.sec02_container .sec02__img {
   width: 100%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  filter: brightness(1);
+}
+.sec02_container .sec02__img:hover {
+  filter: brightness(0.5);
+  width: 100%;
+}
+.sec02_container .sec02__img:hover:after,
+.sec02_container .sec02__img:hover > .hover_text {
+  display: block;
+}
+.sec02_container .sec02__img:after, .sec02_container .hover_text {
+  display: none;
 }
 .sec02_container .search_btn a {
   font-size: 22px;
