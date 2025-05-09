@@ -265,23 +265,27 @@ body{
         font-size: 28px;
         margin-bottom: 100px;
     }
-    .sec02__img{
-        width: 100%;
-        transition: .2s ease-in-out;
-        cursor: pointer;
-        filter: brightness(1);
-    }
-    .sec02__img:hover{
-      filter: brightness(0.5);
+    .box .info {
+      color: #fff;
+      position: absolute;
+      left: 0; 
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
       width: 100%;
+      padding: 15px;
+      box-sizing: border-box;
+      opacity: 0;
+      transition: opacity 0.35s ease-in-out;
     }
-    .sec02__img:hover:after,
-    .sec02__img:hover > .hover_text{
-      display: block;
+    .box:hover .info {
+      opacity: 1;
     }
-    .sec02__img:after,.hover_text{
-      display: none;
+  
+    .box .info p {
+      font-size: 20px;
+      color: #fff;
     }
+ 
     .search_btn {
         a {
             font-size: 22px;
