@@ -193,6 +193,7 @@ body{
     overflow-x: hidden;
     width: 100%;
     font-family: 'Pretendard';
+    position: relative;
 }
 .wrapper {
   background-image: url('../images/sec01_bg.png');
@@ -340,7 +341,7 @@ body{
     background-size: cover;
   }
   .sec03_img03{
-    background-image: url('../images/sec04_img_01.png');
+    background-image: url('../images/sec04_img_03.png');
     background-repeat: no-repeat;
     width: 100%;
     min-height: 803px;
@@ -355,7 +356,7 @@ body{
     color: #fff;
     font-size: 50px;
     line-height: 140%;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     margin-bottom: 20px;
   }
   .sec03_sub_title h2{
@@ -364,6 +365,10 @@ body{
     color: #fff;
     line-height: 140%;
     letter-spacing: 0.03em;
+  }
+  .swiper {
+    width: 100%; /* 또는 원하는 너비 값 */
+    height: 803px;
   }
 }
 .sec04{
