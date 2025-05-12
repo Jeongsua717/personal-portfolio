@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css);
 @font-face {
   font-family: "Pretendard";
@@ -586,46 +585,43 @@ body {
   .wrapper .navbar-collapse {
     display: none;
     width: 100%;
-    position: fixed; /* fixed로 변경! 화면에 고정되게! */
-    top: 0; /* 네비게이션 바 높이만큼 아래에 위치 (네비바 높이에 따라 조절 필요) */
+    position: fixed;
+    top: 0;
     left: 0;
-    height: 100vh; /* 화면 전체 높이 사용 */
-    top: 0; /* top을 0으로 해서 화면 맨 위부터 시작 */
-    padding-top: 60px; /* 네비바 높이만큼 내부 패딩 추가 */
-    background-color: #f8f8f8; /* 메뉴 배경색 */
+    height: 100vh;
+    top: 0;
+    padding-top: 60px;
+    background-color: #f8f8f8;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-    transform: translateX(100%); /* 기본 위치 (화면 오른쪽 밖으로 숨김 - 마몽드처럼 옆에서 나오는 효과!) */
-    overflow-y: auto; /* 메뉴 내용이 많을 경우 스크롤 가능하게 */
-    z-index: 999; /* 네비바보다는 아래, 다른 내용보다는 위에 */
+    transform: translateX(100%);
+    overflow-y: auto;
+    z-index: 999;
   }
   .wrapper .navbar-collapse.show {
-    display: block; /* JavaScript로 .show 클래스가 붙으면 보이게! */
-    transform: translateX(0); /* 원래 위치로! (왼쪽으로 슬라이드) */
+    display: block;
+    transform: translateX(0);
   }
   .wrapper .navbar-nav {
-    /* 세로 정렬 유지 */
     flex-direction: column;
-    align-items: flex-start; /* 마몽드처럼 왼쪽에 붙게 하려면 flex-start */
-    padding: 20px; /* 메뉴 항목 전체에 패딩 추가 */
+    align-items: flex-start;
+    padding: 20px;
   }
   .wrapper .navbar {
-    /* ... 다른 스타일들 ... */
-    position: fixed; /* 화면의 특정 위치에 고정! */
-    top: 0; /* 화면 맨 위에 붙이고! */
-    z-index: 1000; /* 다른 요소들보다 제일 위에 오도록! */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
   }
   .wrapper .nav-item {
-    margin: 10px 0; /* 세로 간격 유지 */
-    width: 100%; /* 항목 너비를 100%로 */
-    border-bottom: 1px solid #eee; /* 항목 구분선 (선택 사항) */
-    padding-bottom: 5px; /* 구분선과의 간격 */
+    margin: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
   }
   .wrapper .nav-link {
-    /* padding: 10px; */ /* 항목 패딩은 nav-item에서 주는게 좋음 */
     width: 100%;
-    text-align: left; /* 텍스트 왼쪽 정렬 */
-    font-size: 20px; /* 메뉴 글씨 크기 키우기 (마몽드 스타일) */
+    text-align: left;
+    font-size: 20px;
     color: #333;
   }
 }
