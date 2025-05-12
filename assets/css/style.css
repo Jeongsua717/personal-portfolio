@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css);
 @font-face {
   font-family: "Pretendard";
@@ -158,33 +159,6 @@
   font-weight: normal;
   src: local("Dancing In The Rain"), url("DancingInTheRain-G3M1m.woff") format("woff");
 }
-.navbar {
-  font-family: "Poppins", sans-serif;
-  min-height: 80px;
-}
-.navbar .navbar-brand {
-  padding: 0;
-}
-.navbar .navbar-toggler {
-  font-size: 1.25rem;
-}
-.navbar .navbar-toggler:focus {
-  box-shadow: none;
-}
-.navbar .nav-link {
-  color: #3c3c3c;
-  font-size: 18px;
-  font-weight: 400;
-}
-.navbar .nav-item {
-  padding-right: 30px;
-}
-.navbar .nav-item a {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-}
-
 body {
   overflow-x: hidden;
   width: 100%;
@@ -199,8 +173,48 @@ body {
   background-position: center center;
   height: 830px;
 }
-
-.hero-banner .hero_title h1 {
+.wrapper .navbar {
+  font-family: "Poppins", sans-serif;
+  min-height: 80px;
+}
+.wrapper .navbar-brand {
+  padding: 0;
+  height: 40px;
+  max-width: 100%;
+}
+.wrapper .bg-nav {
+  background-color: #FFFAFA;
+  border-bottom: 1px solid #ccc;
+}
+.wrapper .transparent-navbar {
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: none;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.wrapper .navbar-toggler {
+  font-size: 1.25rem;
+}
+.wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+.wrapper .nav-link {
+  color: #3c3c3c;
+  font-size: 18px;
+  font-weight: 400;
+}
+.wrapper .nav-item {
+  padding-right: 30px;
+}
+.wrapper .nav-item a {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.wrapper .main-banner {
+  padding-top: 60px;
+}
+.wrapper .main_title h1 {
   color: #3c3c3c;
   font-weight: 600;
   font-size: 50px;
@@ -208,15 +222,15 @@ body {
   margin: 0;
   letter-spacing: 0.03em;
 }
-.hero-banner .hero_title p {
+.wrapper .main_title p {
   color: #3c3c3c;
   font-weight: 500;
   padding-top: 25px;
   font-size: 25px;
   letter-spacing: 0.03em;
 }
-.hero-banner .hero_content {
-  padding: 235px 0 0 312px;
+.wrapper .main_content {
+  padding: 235px 0 0 0;
 }
 
 .sec02_container {
@@ -263,6 +277,7 @@ body {
 }
 .sec02_container .box {
   position: relative;
+  cursor: pointer;
 }
 .sec02_container .box .info {
   color: #fff;
@@ -272,8 +287,8 @@ body {
   left: 1.7%;
   bottom: 6%;
   background: rgba(0, 0, 0, 0.5);
-  width: 461px;
-  height: 320px;
+  width: 464px;
+  height: 323px;
   box-sizing: border-box;
   opacity: 0;
   transition: opacity 0.35s ease-in-out;
@@ -391,6 +406,7 @@ body {
 
 .sec04 {
   background-color: #FFFAFA;
+  padding-bottom: 200px;
 }
 .sec04 .sec04_title h1 {
   margin-top: 100px;
@@ -403,13 +419,6 @@ body {
   letter-spacing: 0.03em;
   color: #3c3c3c;
 }
-.sec04 .sec04_img {
-  padding: 0;
-  margin: 0;
-}
-.sec04 .sec04_img img {
-  width: 100%;
-}
 .sec04 .sec04_sub_title h2 {
   font-size: 25px;
   font-weight: 600;
@@ -417,13 +426,42 @@ body {
   padding: 25px 0 15px 0;
 }
 .sec04 .sec04_sub_title {
-  text-align: center;
+  margin-top: 0;
+  position: relative;
+  top: 100%;
 }
 .sec04 .sec04_sub_title p {
   font-size: 20px;
   font-weight: 500;
   color: #808080;
-  padding-bottom: 100px;
+}
+.sec04 .sec04_img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 306/347;
+  cursor: pointer;
+}
+.sec04 .sec04_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+.sec04 .sec04_img img.before_img {
+  opacity: 1;
+}
+.sec04 .sec04_img img.hover_img {
+  opacity: 0;
+}
+.sec04 .sec04_img:hover img.before_img {
+  opacity: 0;
+}
+.sec04 .sec04_img:hover img.hover_img {
+  opacity: 1;
 }
 
 .sec05 {
@@ -542,4 +580,63 @@ body {
 }
 .footer_container .bg-green {
   background-color: #1C6343;
+}
+
+@media (max-width: 768px) {
+  .wrapper .navbar-collapse {
+    display: none;
+    width: 100%;
+    position: fixed; /* fixed로 변경! 화면에 고정되게! */
+    top: 0; /* 네비게이션 바 높이만큼 아래에 위치 (네비바 높이에 따라 조절 필요) */
+    left: 0;
+    height: 100vh; /* 화면 전체 높이 사용 */
+    top: 0; /* top을 0으로 해서 화면 맨 위부터 시작 */
+    padding-top: 60px; /* 네비바 높이만큼 내부 패딩 추가 */
+    background-color: #f8f8f8; /* 메뉴 배경색 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%); /* 기본 위치 (화면 오른쪽 밖으로 숨김 - 마몽드처럼 옆에서 나오는 효과!) */
+    overflow-y: auto; /* 메뉴 내용이 많을 경우 스크롤 가능하게 */
+    z-index: 999; /* 네비바보다는 아래, 다른 내용보다는 위에 */
+  }
+  .wrapper .navbar-collapse.show {
+    display: block; /* JavaScript로 .show 클래스가 붙으면 보이게! */
+    transform: translateX(0); /* 원래 위치로! (왼쪽으로 슬라이드) */
+  }
+  .wrapper .navbar-nav {
+    /* 세로 정렬 유지 */
+    flex-direction: column;
+    align-items: flex-start; /* 마몽드처럼 왼쪽에 붙게 하려면 flex-start */
+    padding: 20px; /* 메뉴 항목 전체에 패딩 추가 */
+  }
+  .wrapper .navbar {
+    /* ... 다른 스타일들 ... */
+    position: fixed; /* 화면의 특정 위치에 고정! */
+    top: 0; /* 화면 맨 위에 붙이고! */
+    z-index: 1000; /* 다른 요소들보다 제일 위에 오도록! */
+  }
+  .wrapper .nav-item {
+    margin: 10px 0; /* 세로 간격 유지 */
+    width: 100%; /* 항목 너비를 100%로 */
+    border-bottom: 1px solid #eee; /* 항목 구분선 (선택 사항) */
+    padding-bottom: 5px; /* 구분선과의 간격 */
+  }
+  .wrapper .nav-link {
+    /* padding: 10px; */ /* 항목 패딩은 nav-item에서 주는게 좋음 */
+    width: 100%;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    font-size: 20px; /* 메뉴 글씨 크기 키우기 (마몽드 스타일) */
+    color: #333;
+  }
+}
+@media (max-width: 540px) {
+  .wrapper .main-banner {
+    min-height: 300px;
+  }
+  .wrapper .main_title h1 {
+    font-size: 28px;
+  }
+  .wrapper .main_title p {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
