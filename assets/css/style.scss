@@ -202,6 +202,10 @@ body{
     color: #3c3c3c;
     font-size: 18px;
     font-weight: 400;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav-link:hover {
+    color: #1C6343;
   }
   .nav-item{
     padding-right: 30px;
@@ -211,6 +215,7 @@ body{
     font-size: 18px;
     font-weight: 500;
   }
+  
   .main-banner{
     padding-top: 60px;
   }
