@@ -171,7 +171,8 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 830px;
+  max-height: 830px;
+  width: 100%;
   .navbar {
     font-family: "Poppins", sans-serif;
     min-height: 80px;
@@ -273,7 +274,7 @@ body{
   width: 100%;
   background-color: #FFFAFA;
     .sec02_container{
-    max-width: 1300px;
+    max-width: 1250px;
     margin: 0 auto;
     }
     .sec02_title{
@@ -410,7 +411,7 @@ body{
     background-image: url('../images/sec04_img_01.png');
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 803px;
+    max-height: 803px;
     background-position: center center;
     background-size: cover;
   }
@@ -418,7 +419,7 @@ body{
     background-image: url('../images/sec04_img_02.png');
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 803px;
+    max-height: 803px;
     background-position: center center;
     background-size: cover;
   }
@@ -426,12 +427,13 @@ body{
     background-image: url('../images/sec04_img_03.png');
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 803px;
+    max-height: 803px;
     background-position: center center;
     background-size: cover;
   }
   .sec03_sub_title{
-    padding: 270px 0 0 352px;
+    padding-top: 270px;
+    padding-left: 17%;
   }
   .sec03_sub_title h1{
     font-family: 'Dancing In The Rain';
@@ -595,7 +597,8 @@ body{
 .footer_container{
   .icon_title{
     gap: 15px;
-    padding: 27px 0 27px 312px;
+    padding: 27px 0 27px 0;
+    padding-left: 17%;
   }
   .border_tb{
     border-style: solid;
@@ -607,16 +610,16 @@ body{
     border-bottom-width: 2px;
   }
   .footer_title{
-    padding-left: 302px;
+    padding-left: 16.5%;
     padding-bottom: 26px;
   }
   .footer_title p{
     padding-left: 10px;
   }
   .footer_text{
-    padding-left: 312px;
-    padding-top: 60px;
-    padding-bottom: 228px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 17%;
 
   }
   .footer_img{
@@ -641,7 +644,11 @@ body{
     background-color: #1C6343;
   }
 }
+// footer
 
+@media (max-width: 1280px){
+
+}
 
 @media (max-width: 768px) {
     .wrapper{
