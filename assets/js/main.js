@@ -1,4 +1,4 @@
-const swipers = new Swiper('.mySwipers', { 
+let swipers = new Swiper('.mySwipers', { 
         direction: 'horizontal',
         loop: true,
         
