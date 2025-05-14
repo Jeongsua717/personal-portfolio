@@ -410,24 +410,21 @@ body{
   .sec03_img{
     background-image: url('../images/sec04_img_01.png');
     background-repeat: no-repeat;
-    width: 100%;
-    max-height: 803px;
+    background-size: cover;
     background-position: center center;
     background-size: cover;
   }
   .sec03_img02{
     background-image: url('../images/sec04_img_02.png');
     background-repeat: no-repeat;
-    width: 100%;
-    max-height: 803px;
+    background-size: cover;
     background-position: center center;
     background-size: cover;
   }
   .sec03_img03{
     background-image: url('../images/sec04_img_03.png');
     background-repeat: no-repeat;
-    width: 100%;
-    max-height: 803px;
+    background-size: cover;
     background-position: center center;
     background-size: cover;
   }
@@ -455,6 +452,7 @@ body{
     height: 803px;
   }
 }
+// section03
 .sec04{
   background-color: #FFFAFA;
   padding-bottom: 200px;
@@ -647,7 +645,11 @@ body{
 // footer
 
 @media (max-width: 1280px){
-
+  .sec03_container{
+    .sec03_sub_title{
+      padding-left: 10%;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -661,17 +663,14 @@ body{
         height: 100vh;
         top: 0;
         padding-top: 60px;
-        background-color: #f8f8f8;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        background-color: #FFFAFA;
         transition: transform 0.3s ease-in-out;
-        transform: translateX(100%);
         overflow-y: auto;
         z-index: 999;
     }
 
     .navbar-collapse.show {
         display: block;
-        transform: translateX(0);
     }
 
     .navbar-nav {
