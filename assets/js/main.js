@@ -1,3 +1,21 @@
+const swipers = new Swiper('.mySwipers', { 
+        direction: 'horizontal',
+        loop: true,
+        
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+         effect: 'fade',
+         speed: 800,
+    });
+
+
+
+
+
+
+
 const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.getElementById('navbarNavUser');
     navbarToggler.addEventListener('click', function() {
