@@ -3,7 +3,7 @@ let swipers = new Swiper('.mySwipers', {
         loop: true,
         
         autoplay: {
-            delay: 5000,
+            delay: 2000,
             disableOnInteraction: false,
         },
          effect: 'fade',

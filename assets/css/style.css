@@ -259,15 +259,21 @@ body {
   z-index: 1;
 }
 
-.sec02_container {
+.sec02_wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
   background-color: #FFFAFA;
+}
+.sec02_wrapper .sec02_container {
   max-width: 1300px;
   margin: 0 auto;
 }
-.sec02_container .sec02_title {
+.sec02_wrapper .sec02_title {
   margin-top: 100px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   font-size: 58px;
@@ -275,11 +281,11 @@ body {
   letter-spacing: 0.03em;
   color: #3c3c3c;
 }
-.sec02_container .sec02_sub_title {
+.sec02_wrapper .sec02_sub_title {
   padding-bottom: 50px;
   padding-left: 24px;
 }
-.sec02_container .sec02_sub_title h2 {
+.sec02_wrapper .sec02_sub_title h2 {
   font-family: "Poppins", sans-serif;
   color: #808080;
   font-size: 30px;
@@ -287,9 +293,9 @@ body {
   line-height: 140%;
   letter-spacing: 0.03em;
   margin-bottom: 15px;
-  margin-top: 49px;
+  margin-top: 100px;
 }
-.sec02_container .sec02_sub_title h3 {
+.sec02_wrapper .sec02_sub_title h3 {
   font-family: "Eulyoo1945", serif;
   font-weight: 600;
   color: #3c3c3c;
@@ -298,7 +304,7 @@ body {
   line-height: 140%;
   letter-spacing: 0.03em;
 }
-.sec02_container .sec02_sub_title h4 {
+.sec02_wrapper .sec02_sub_title h4 {
   line-height: 140%;
   letter-spacing: 0.03em;
   font-weight: 500;
@@ -306,13 +312,13 @@ body {
   font-size: 25px;
   margin-bottom: 100px;
 }
-.sec02_container .box {
+.sec02_wrapper .box {
   position: relative;
   cursor: pointer;
   overflow: hidden;
   margin-right: 12px;
 }
-.sec02_container .box .info {
+.sec02_wrapper .box .info {
   border-radius: 20px;
   text-align: center;
   position: absolute;
@@ -328,16 +334,16 @@ body {
   width: 100%;
   height: 100%;
 }
-.sec02_container .box:hover .info {
+.sec02_wrapper .box:hover .info {
   opacity: 1;
 }
-.sec02_container .box .info p {
+.sec02_wrapper .box .info p {
   font-size: 28px;
   font-weight: 500;
   letter-spacing: 0.03em;
   color: #fff;
 }
-.sec02_container .search_btn a {
+.sec02_wrapper .search_btn a {
   font-size: 22px;
   margin: 0;
   padding: 0;
@@ -347,7 +353,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.01em;
 }
-.sec02_container .search_btn a::after {
+.sec02_wrapper .search_btn a::after {
   content: "";
   display: block;
   position: absolute;
@@ -357,7 +363,7 @@ body {
   height: 1px;
   background-color: #4f4f4f;
 }
-.sec02_container .sec02_sub_title h5 {
+.sec02_wrapper .sec02_sub_title h5 {
   font-family: "Poppins", sans-serif;
   color: #808080;
   font-size: 30px;
@@ -368,7 +374,7 @@ body {
   margin-top: 85px;
   text-align: center;
 }
-.sec02_container .sec02__img img {
+.sec02_wrapper .sec02__img img {
   width: 100%;
   height: auto;
   border-radius: 20px;

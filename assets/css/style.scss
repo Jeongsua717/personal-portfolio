@@ -168,7 +168,6 @@ body{
     position: relative;
 }
 .wrapper {
-  // background-image: url('../images/sec01_bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -267,15 +266,20 @@ body{
 }
 
 // main banner
-
-.sec02_container{
-    background-color: #FFFAFA;
+.sec02_wrapper{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  background-color: #FFFAFA;
+    .sec02_container{
     max-width: 1300px;
     margin: 0 auto;
+    }
     .sec02_title{
         margin-top: 100px;
         text-align: center;
-        margin-bottom: 100px;
+        margin-bottom: 10px;
         font-weight: 600;
         font-family: "Poppins", sans-serif;
         font-size: 58px;
@@ -295,7 +299,7 @@ body{
         line-height: 140%;
         letter-spacing: 0.03em;
         margin-bottom: 15px;
-        margin-top: 49px;
+        margin-top: 100px;
     }
     .sec02_sub_title h3{
         font-family: 'Eulyoo1945', serif;
