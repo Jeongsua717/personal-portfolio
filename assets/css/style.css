@@ -238,6 +238,7 @@ body {
   letter-spacing: 0.03em;
 }
 .wrapper .main-banner .swiper-slide {
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -396,21 +397,21 @@ body {
   color: #3c3c3c;
 }
 .sec03_container .sec03_img {
-  background-image: url("../images/sec04_img_01.png");
+  background-image: url("../images/sec01_bg01.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-size: cover;
 }
 .sec03_container .sec03_img02 {
-  background-image: url("../images/sec04_img_02.png");
+  background-image: url("../images/sec01_bg02.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-size: cover;
 }
 .sec03_container .sec03_img03 {
-  background-image: url("../images/sec04_img_03.png");
+  background-image: url("../images/sec01_bg03.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -592,6 +593,7 @@ body {
 }
 .footer_container .footer_title p {
   padding-left: 10px;
+  font-size: 16px;
 }
 .footer_container .footer_text {
   padding-top: 100px;
@@ -611,7 +613,7 @@ body {
 }
 .footer_container .footer_text p {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 200;
   font-family: "Poppins", sans-serif;
 }
@@ -620,8 +622,23 @@ body {
 }
 
 @media (max-width: 1280px) {
+  .wrapper {
+    width: 100%;
+  }
   .sec03_container .sec03_sub_title {
     padding-left: 10%;
+  }
+  .footer_container .icon_title {
+    padding-left: 10%;
+  }
+  .footer_container .footer_title {
+    padding-left: 10%;
+  }
+  .footer_container .footer_text {
+    padding-left: 10%;
+  }
+  .footer_container .footer_text p {
+    white-space: pre-line;
   }
 }
 @media (max-width: 768px) {

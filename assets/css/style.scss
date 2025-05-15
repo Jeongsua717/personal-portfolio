@@ -240,6 +240,7 @@ body{
     letter-spacing: 0.03em;
   }
   .main-banner .swiper-slide {
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -265,8 +266,8 @@ body{
     z-index: 1;
 }
 }
-
 // main banner
+
 .sec02_wrapper{
   background-repeat: no-repeat;
   background-size: cover;
@@ -392,8 +393,8 @@ body{
         border-radius: 20px;
     }
 }
-
 // section02
+
 .sec03_container{
   background-color: #FFFAFA;
   .sec03_title h1{
@@ -408,21 +409,21 @@ body{
         color: #3c3c3c;
   }
   .sec03_img{
-    background-image: url('../images/sec04_img_01.png');
+    background-image: url('../images/sec01_bg01.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-size: cover;
   }
   .sec03_img02{
-    background-image: url('../images/sec04_img_02.png');
+    background-image: url('../images/sec01_bg02.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-size: cover;
   }
   .sec03_img03{
-    background-image: url('../images/sec04_img_03.png');
+    background-image: url('../images/sec01_bg03.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -453,6 +454,7 @@ body{
   }
 }
 // section03
+
 .sec04{
   background-color: #FFFAFA;
   padding-bottom: 200px;
@@ -515,11 +517,8 @@ body{
 }
 
 }
-
-
-
-
 // section04
+
 .sec05{
   background-color: #FFFAFA;
   .sec05_title h1{
@@ -592,6 +591,7 @@ body{
   }
 }
 // section05
+
 .footer_container{
   .icon_title{
     gap: 15px;
@@ -613,6 +613,7 @@ body{
   }
   .footer_title p{
     padding-left: 10px;
+    font-size: 16px;
   }
   .footer_text{
     padding-top: 100px;
@@ -634,7 +635,7 @@ body{
   }
   .footer_text p{
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 200;
     font-family: "Poppins", sans-serif;
   }
@@ -645,9 +646,26 @@ body{
 // footer
 
 @media (max-width: 1280px){
+  .wrapper{
+    width: 100%;
+  }
   .sec03_container{
     .sec03_sub_title{
       padding-left: 10%;
+    }
+  }
+  .footer_container{
+    .icon_title{
+      padding-left: 10%;
+    }
+    .footer_title{
+      padding-left: 10%;
+    }
+    .footer_text{
+      padding-left: 10%;
+    }
+    .footer_text p{
+      white-space: pre-line;
     }
   }
 }
@@ -679,9 +697,9 @@ body{
         padding: 20px;
     }
     .navbar {
-    position: fixed; 
-    top: 0; 
-    z-index: 1000;
+        position: fixed; 
+        top: 0; 
+        z-index: 1000;
     }
     .nav-item {
         margin: 10px 0;
@@ -697,6 +715,7 @@ body{
         color: #333;
     }
   }
+  
 }
 
 
