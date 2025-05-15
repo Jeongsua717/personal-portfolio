@@ -1,14 +1,15 @@
-let swipers = new Swiper('.mySwipers', { 
-        direction: 'horizontal',
-        loop: true,
-        
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-        },
-         effect: 'fade',
-         speed: 800,
-    });
+let swipers = new Swiper('.mySwipers', {
+    slidesPerView: 1,
+    direction: 'horizontal',
+    loop: true,
+
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    effect: 'fade',
+    speed: 800,
+});
 
 
 
@@ -17,17 +18,18 @@ let swipers = new Swiper('.mySwipers', {
 
 
 const navbarToggler = document.querySelector('.navbar-toggler');
-    const navbarCollapse = document.getElementById('navbarNavUser');
-    navbarToggler.addEventListener('click', function() {
+const navbarCollapse = document.getElementById('navbarNavUser');
+navbarToggler.addEventListener('click', function () {
     navbarCollapse.classList.toggle('show');
+});
+const navLinks = document.querySelectorAll('#navbarNavUser .nav-link');
+navLinks.forEach(function (link) {
+    link.addEventListener('click', function () {
+        navbarCollapse.classList.remove('show');
     });
-    const navLinks = document.querySelectorAll('#navbarNavUser .nav-link');
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-            navbarCollapse.classList.remove('show');
-        });
-    });
+});
 let swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
     spaceBetween: 0,
     centeredSlides: true,
     autoplay: {
@@ -35,7 +37,7 @@ let swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
     }
 });
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     let navbar = document.querySelector('.navbar');
     let scrollPosition = window.scrollY;
     if (scrollPosition > 100) {

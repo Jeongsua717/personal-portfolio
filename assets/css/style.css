@@ -189,7 +189,7 @@ body {
   background-color: transparent;
   box-shadow: none;
   border-bottom: none;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .wrapper .navbar-toggler {
   font-size: 1.25rem;
@@ -588,11 +588,11 @@ body {
   border-bottom-width: 2px;
 }
 .footer_container .footer_title {
-  padding-left: 16.5%;
+  padding-left: 17%;
   padding-bottom: 26px;
 }
 .footer_container .footer_title p {
-  padding-left: 10px;
+  padding-right: 10px;
   font-size: 16px;
 }
 .footer_container .footer_text {
@@ -626,7 +626,7 @@ body {
     width: 100%;
   }
   .sec03_container .sec03_sub_title {
-    padding-left: 10%;
+    padding-left: 8%;
   }
   .footer_container .icon_title {
     padding-left: 10%;
@@ -639,6 +639,64 @@ body {
   }
   .footer_container .footer_text p {
     white-space: pre-line;
+  }
+}
+@media (max-width: 1024px) {
+  .main-banner .main_title h1 {
+    font-size: 45px;
+  }
+  .main-banner .main_title p {
+    padding-top: 25px;
+    font-size: 22px;
+  }
+  .sec02_wrapper .sec02_title {
+    font-size: 50px;
+  }
+  .sec02_wrapper .sec02_sub_title {
+    padding-left: 5px;
+  }
+  .sec02_wrapper .sec02_sub_title h2 {
+    margin-top: 80px;
+  }
+  .sec02_wrapper .sec02_sub_title h3 {
+    font-size: 40px;
+  }
+  .sec02_wrapper .sec02_sub_title h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+  }
+  .sec02_wrapper .search_btn a {
+    font-size: 18px;
+  }
+  .sec03_container .sec03_title h1 {
+    font-size: 50px;
+  }
+  .sec03_container .sec03_sub_title h1 {
+    font-size: 45px;
+  }
+  .sec03_container .sec03_sub_title h2 {
+    font-size: 45px;
+  }
+  .sec04 .sec04_title h1 {
+    font-size: 50px;
+  }
+  .sec04 .sec04_sub_title h2 {
+    font-size: 23px;
+    padding-bottom: 10px;
+  }
+  .sec04 .sec04_sub_title p {
+    font-size: 18px;
+  }
+  .sec05 .sec05_title h1 {
+    font-size: 50px;
+  }
+  .sec05 .sec05_sub_title h1 {
+    font-size: 22px;
+  }
+  .sec05 .sec05_sub_title h2 {
+    font-size: 30px;
+    padding-bottom: 8px;
   }
 }
 @media (max-width: 768px) {
