@@ -797,9 +797,14 @@ body{
     .sec05_title h1{
         margin-top: 0;
     }
-    .sec05_sub_wrap{
-      position: relative;
-      top: 30%;
+    .sec05_sub_wrap h1{
+      padding-top: 50px;
+    }
+    .sec05_sub_wrap p{
+      margin-bottom: 50px;
+    }
+    .sec05_sub_wrapper{
+      padding: 0;
     }
   }
     
