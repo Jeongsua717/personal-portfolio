@@ -795,16 +795,23 @@ body{
   }
     .sec05{
     .sec05_title h1{
-        margin-top: 0;
+      margin-top: 0;
     }
     .sec05_sub_wrap h1{
-      padding-top: 50px;
+      padding-top: 30px;
     }
     .sec05_sub_wrap p{
       margin-bottom: 50px;
     }
     .sec05_sub_wrapper{
       padding: 0;
+    }
+    .sec05_sub_wrapper{
+      padding: 0;
+    }
+    .position_normal{
+      position: static !important;
+      top: auto;
     }
   }
     
