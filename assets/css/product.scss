@@ -248,9 +248,9 @@ body{
     }
   .main_title p{
     color: #fff;
-    font-weight: 500;
-    padding-top: 25px;
-    font-size: 25px;
+    font-weight: 600;
+    padding-top: 30px;
+    font-size: 40px;
     letter-spacing: 0.03em;
   }
   .main-banner{
@@ -263,7 +263,7 @@ body{
     justify-content: center;
 }
 .main-banner {
-    background-image: url('../images/contact_main_img.png');
+    background-image: url('../images/sec04_img_01.png');
 }
 .main-banner .main_content {
     padding: 0;
@@ -271,183 +271,51 @@ body{
     z-index: 1;
 }
 }
-
 .sec02{
-    .sec02_title{
-        margin-top: 200px;
-        text-align: center;
-        margin-bottom: 200px;
-        font-weight: 500;
-        font-family: "Poppins", sans-serif;
-        font-size: 58px;
-        line-height: 140%;
-        letter-spacing: 0.03em;
-        color: #3c3c3c;
+    .tab-button-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     }
-    .sec02_sub_title{
-        background-image: url('../images/contact_sub_img.png');
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
+    .tab_btn{
+    margin-top: 50px;
     }
-    .sec02_sub_title h1{
-        font-size: 38px;
-        color: #fff;
-        line-height: 160%;
-        font-weight: 600;
-        padding: 51px 24px 0 37px;
-    }
-    .sec02_sub_title p{
-        font-size: 22px;
-        color: #fff;
-        line-height: 160%;
-        font-weight: 400;
-        padding: 16px 24px 0 37px;
-    }
-    .contact_content_right{
-        border: 1px solid rgba(153,153,153,.4);
-        background-color: #FFFAFA;
-        border-radius: 10px;
-        padding: 50px 50px;
-    }
-    .btn-square{
-        border: 1px solid rgb(22,102,66);
-        border-radius: 50px;
-        padding: 23px 74px;
-        background: none;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .btn-square:hover{
-      background-color: #166642;
-    }
-    .btn-square:hover .btn-square__text {
-    color: #fff;
-  }
-    .form_box__title{
-      margin-bottom: 10px;
-      margin-top: 17px;
-    }
-    .form_box__title p{
-      font-size: 18px;
-      line-height: 140%;
-      font-weight: 600;
-      color: #545756;
-    }
-    #name{
-        width: 526px;
-        height: 65px;
-        border: 1px solid rgba(211,211,211,.2);
-        border-radius: 5px;
-        background-color: #F5F5F5;
-        padding-left: 24px;
-        font-weight: 500;
-        font-size: 15px;
-    }
-    #phone_number{
-        width: 526px;
-        height: 65px;
-        border: 1px solid rgba(211,211,211,.2);
-        border-radius: 5px;
-        background-color: #F5F5F5;
-        padding-left: 24px;
-        font-weight: 500;
-        font-size: 15px;
-    }
-    #e-mail{
-        width: 526px;
-        height: 65px;
-        border: 1px solid rgba(211,211,211,.2);
-        border-radius: 5px;
-        background-color: #F5F5F5;
-        padding-left: 24px;
-        font-weight: 500;
-        font-size: 15px;
-    }
-    #company{
-        width: 526px;
-        height: 65px;
-        border: 1px solid rgba(211,211,211,.2);
-        border-radius: 5px;
-        background-color: #F5F5F5;
-        padding-left: 24px;
-        font-weight: 500;
-        font-size: 15px;
-    }
-    #content{
-        width: 526px;
-        height: 65px;
-        border: 1px solid rgba(211,211,211,.2);
-        border-radius: 5px;
-        background-color: #F5F5F5;
-        padding-left: 24px;
-        padding-top: 22px;
-        font-weight: 500;
-        font-size: 15px;
-        overflow-y: scroll;
-        resize: none;
-    }
-    .inquiry_btn{
-      padding: 32px 150px;
-    }
-    .btn-square__text{
-      color: #166642;
-      font-weight: 600;
-      font-size: 22px;
-    }
-    input::placeholder{
-      color: #999999;
-    }
-    textarea::placeholder{
-      color: #999999;
-    }
-    span{
-      color: #166642;
-    }
-    .terms__box{
-      height: 100px;
-      overflow-y: scroll;
-      margin-top: 17px;
-      margin-bottom: 20px;
-  }
-  .terms__agree {
-    gap: 5px;
-  }
-  .terms__agree input[type="checkbox"]{
-    accent-color: #1C6343;
-  }
-}
-.footer_container{
-    margin-top: 200px;
-  .footer_text{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 17%;
-
-  }
-  .footer_img{
-    padding-bottom: 30px;
-
-  }
-  .footer_text h2{
-    color: #fff;
-    font-size: 22px;
-    font-weight: 300;
-    letter-spacing: 0.03em;
-    font-family: "Poppins", sans-serif;
-    padding-bottom: 15px;
-  }
-  .footer_text p{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 200;
-    font-family: "Poppins", sans-serif;
-  }
-  .bg-green{
+    .tab_btn01{
     background-color: #1C6343;
-  }
-  .check_marker{
-    margin-left: 100px;
-  }
+    color: #FFFAFA;
+    padding: 64px 43px;
+    border-radius: 100px;
+    }
+    .tab_btn02{
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D1CFCF;
+    border-radius: 50px;
+    padding: 19px 79px 19px 79px;
+    color: #808080;
+    }
+    .tab_btn .col-3 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    }
+    .tab-button-link {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    text-decoration: none; 
+    flex-shrink: 0; 
+    transition: all 0.3s ease;
+    }
+    .tab-button-link img {
+    display: block;
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    }
 }
-// footer
-
