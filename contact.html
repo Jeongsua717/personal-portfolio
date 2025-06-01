@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-lg bg-nav transparent-navbar fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#main-banner">
+                    <img src="assets/images/muse_white_logo.png" alt="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavUser"
+                    aria-controls="navbarNavUser" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavUser">
+                    <ul class="navbar-nav ms-auto navbar__menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brand</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Event</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav -->
+        <section class="main-banner" id="main-banner">
+            <div class="main_container container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="main_content">
+                            <div class="main_title">
+                                <h1>
+                                    문의 안내</h1>
+                                <p>뮤즈는 진심을 담은 브랜드와의 소중한<br>인연을 기다립니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec02">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="sec02_title">CONTACT</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="sec02_sub_title">
+                            <h1>함께 성장할 클린 뷰티<br>
+                                브랜드를 찾습니다.</h1>
+                            <p>문의 내용을 작성해주시면 연락 드리겠습니다.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <form action="/submit-form" method="POST" class="contact_content_right">
+                            <div>
+                                <div class="form-box__wrap">
+                                    <div class="form_box__title">
+                                        <p>성함 <span>*</span></p>
+                                    </div>
+                                    <div class="form_box__content">
+                                        <label for="name" class="ir"></label>
+                                        <input type="text" id="name" placeholder="성함을 입력해주세요." required />
+                                    </div>
+                                </div>
+                                <div class="form-box__wrap">
+                                    <div class="form_box__title">
+                                        <p>연락처 <span>*</span></p>
+                                    </div>
+                                    <div class="form_box__content">
+                                        <label for="phone_number" class="ir"></label>
+                                        <input type="tel" id="phone_number" placeholder="연락처를 입력해주세요." required />
+                                    </div>
+                                </div>
+                                <div class="form-box__wrap">
+                                    <div class="form_box__title">
+                                        <p>이메일 <span>*</span></p>
+                                    </div>
+                                    <div class="form_box__content">
+                                        <label for="e-mail" class="ir"></label>
+                                        <input type="email" id="e-mail" placeholder="이메일을 입력해주세요." required />
+                                    </div>
+                                </div>
+                                <div class="form-box__wrap">
+                                    <div class="form_box__title">
+                                        <p>회사명 <span>*</span></p>
+                                    </div>
+                                    <div class="form_box__content">
+                                        <label for="company" class="ir"></label>
+                                        <input type="text" id="company" placeholder="회사명을 입력해주세요." required />
+                                    </div>
+                                </div>
+
+                                <div class="form-box__wrap form-box__wrap--column">
+                                    <div class="form_box__title content_text">
+                                        <p>문의내용 <span>*</span></p>
+                                    </div>
+                                    <div class="form_box__content">
+                                        <label for="content" class="ir"></label>
+                                        <textarea name="content" id="content" placeholder="문의내용을 입력해주세요."
+                                            required></textarea>
+                                    </div>
+                                </div>
+                                <div class="terms__box">
+                                    <div class="terms__text">
+                                        <div class="etcterm__body">
+                                            <div class="etcterm__row">
+                                                <div class="etcterm__row__title">
+                                                    개인정보 수집 및 이용 제공 동의 (필수)
+                                                </div>
+                                                <!-- 1 -->
+                                                <p>1. 개인정보 수집항목</p>
+                                                <ul>
+                                                    <li>
+                                                        필수 항목 : 이름, 연락처, 이메일, 회사명 문의하기를
+                                                        통해 입력한 내용
+                                                    </li>
+                                                    <li>
+                                                        자동으로 수집될 수 있는 정보 (부적절한 접근 시) : IP,
+                                                        접속 시간, 쿠키, 브라우저 종류 및 OS
+                                                    </li>
+                                                </ul>
+                                                <!-- 2 -->
+                                                <p>2. 개인정보 수집방법 ㈜MUSE</p>
+                                                <ul>
+                                                    <li>홈페이지 Contact메뉴</li>
+                                                    <li>
+                                                        선택항목을 입력하지 않은 경우에도 서비스 이용 제한은
+                                                        없습니다.
+                                                    </li>
+                                                </ul>
+                                                <!-- 3 -->
+                                                <p>3. 개인정보 수집목적</p>
+                                                <ul>
+                                                    <li>
+                                                        ㈜MUSE은 사용자 식별, 사업문의 접수 및 처리를
+                                                        위한 서비스 제공을 목적으로 개인정보를 활용합니다.
+                                                    </li>
+                                                    <li>
+                                                        사업, IR, 마케팅, 채용 문의 응대를 위한 정보를
+                                                        수집합니다.
+                                                    </li>
+                                                    <li>
+                                                        이용자가 제공한 모든 정보는 목적에 필요한 용도
+                                                        이외로는 사용되지 않으며 이용 목적이 변경될 시에는
+                                                        사전 동의를 구할 것입니다.
+                                                    </li>
+                                                </ul>
+                                                <!-- 4 -->
+                                                <p>4. 개인정보의 보유 및 이용기간</p>
+                                                <ul>
+                                                    <li>
+                                                        ㈜MUSE는 원칙적으로 개인정보의 수집목적 또는
+                                                        제공받은 목적이 달성된 때에는 귀하의 개인정보를 지체
+                                                        없이 파기합니다. 다만 발송내역의 자료를 확인하기 위해
+                                                        3년간 보유합니다. 다른 법령에 따라 보존하여야 하는
+                                                        경우에는 보유 및 이용기간이 경과한 개인정보를 파기하지
+                                                        아니하고 보유할 수 있습니다.
+                                                    </li>
+                                                </ul>
+                                                <!-- 5 -->
+                                                <p>5. 동의를 거부할 권리 및 동의 거부에 따른 불이익</p>
+                                                <ul>
+                                                    <li>
+                                                        이용자는 개인정보의 수집, 이용 등과 관련한 위 사항에
+                                                        대하여 원하지 않는 경우 동의를 거부할 수 있습니다.
+                                                        다만, 동의하지 않을 경우 서비스 이용이 제한될 수
+                                                        있습니다.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="terms__agree">
+                                    <input type="checkbox" id="agree" class="agree_btn" />
+                                    <span class="check_marker"></span>
+                                    <p>개인정보 수집 및 이용에 동의합니다.</p>
+                                </label>
+                                <div class="inquiry_btn">
+                                    <button type="submit" class="btn-square">
+                                        <span class="btn-square__text">문의하기</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer_container">
+                <div class="row bg-green">
+                    <div class="col-md-12">
+                        <div class="footer_text">
+                            <div class="footer_img">
+                                <img src="assets/images/MUSE.png" alt="회사명">
+                            </div>
+                            <h2>COMPANY INFO</h2>
+                            <p>Company : 주식회사 뮤즈<br>CEO : 정수아<br>Address : 서울 강남구 논현로 107길 5<br>Business license :
+                                123-45-67891
+                                <br>Online sales license : 제 강남-717호[사업자정보확인]<br>
+                                <br><br>
+                                COPYRIGHT MUSE CO.LTD. ALL RIGHTS RESERVED.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
