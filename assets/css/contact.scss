@@ -230,14 +230,6 @@ body{
     font-size: 18px;
     font-weight: 300;
   }
-  .main-banner{
-    min-height: 650px;
-  }
-  .main-banner{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
   .main_title h1{
     color: #fff;
     font-weight: 600;
@@ -261,6 +253,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 650px;
+    overflow: hidden;
+    position: relative;
 }
 .main-banner {
     background-image: url('../images/contact_main_img.png');

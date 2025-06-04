@@ -347,87 +347,53 @@ body{
     }
 }
 // sec02
-
-.sec03 {
-    .nav-tabs {
-        justify-content: center;
-        border-bottom: none;
-        padding: 100px 0 50px 0;
+.sec03{
+    .balance_img{
+        width: 100%;
+        height: auto;
+        padding-top: 200px;
     }
-    .nav-tabs li:nth-child(1n+2) {
-        border-left: 1px solid #999;
-        padding: 0;
+    .balance_title{
+        padding-top: 200px;
+        padding-left: 133px;
     }
-    .nav-item{
-      padding: 0;
-    }
-    .nav-tabs li a.nav-link {
-        border: none;
-        border-radius: 0;
-        color: #999;
-        font-size: 18px;
+    .balance_title h1{
+        font-size: 48px;
         font-weight: 500;
-        padding: 0 30px;
-        white-space: nowrap;
-        transition: color 0.3s ease, background-color 0.3s ease;
-        background-color: transparent;
-        justify-content: center;
+        line-height: 110%;
+        letter-spacing: -0.05rem;
     }
-
-    .nav-tabs li a.nav-link:hover {
-        color: #8D6734;
-        border-color: transparent;
+    .balance_title p{
+        padding-top: 21px;
+        color: #808080;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 200%;
     }
-
-    .nav-tabs li a.nav-link.active {
-        color: #8D6734;
-        font-weight: 700;
-        background-color: transparent;
-        border-bottom: none;
+    .ingredients_img{
+        width: 100%;
+        height: auto;
+        padding-top: 170px;
+        padding-left: 133px;
+    }
+    .ingredients_title{
+        padding-top: 170px;
+    }
+    .ingredients_title h1{
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -0.05rem;
+    }
+    .ingredients_title p{
+        padding-top: 21px;
+        color: #808080;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 200%;
     }
 }
 // sec03
-.sec04{
-  .product_title{
-    text-align: center;
-  }
-  .product_title h1{
-    font-size: 30px;
-    color: #3c3c3c;
-    font-weight: 600;
-    padding-top: 50px;
-  }
-  .product_title p{
-    font-size: 22px;
-    color: #999;
-    font-weight: 500;
-    padding: 20px 0 50px 0;
-  }
-  .product_explain h1{
-    font-size: 20px;
-    color: #999;
-    font-weight: 500;
-    line-height: 200%;
-  }
-  .product_explain h5{
-    font-size: 18px;
-    color: #999;
-    font-weight: 400;
-    line-height: 200%;
-    padding-left: 52px;
-  }
-  .product_explain p{
-    font-size: 18px;
-    color: #999;
-    font-weight: 400;
-    line-height: 200%;
-    padding-left: 33px;
-  }
-  .p-t-40{
-    padding-top: 40px;
-  }
-}
-// sec04
 .footer_container{
     margin-top: 200px;
   .footer_text{

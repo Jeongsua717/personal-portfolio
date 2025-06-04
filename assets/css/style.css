@@ -218,9 +218,15 @@ body {
   min-height: 830px;
 }
 .wrapper .main-banner {
-  position: relative;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 .wrapper .main_title h1 {
   color: #3c3c3c;
