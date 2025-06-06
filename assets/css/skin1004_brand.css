@@ -286,13 +286,14 @@ body {
   z-index: 1;
 }
 
-.sec02 .tab_btn {
+.sec02 .tab_buttons_wrap {
   margin-top: 100px;
 }
-.sec02 .tab_btn .col-3 {
+.sec02 .tab_buttons_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 54px;
 }
 .sec02 .tab-button-link {
   display: flex;
@@ -309,12 +310,6 @@ body {
 }
 .sec02 .tab-button-link:hover {
   transform: translateY(-5px);
-}
-.sec02 .btn_01 {
-  padding-left: 50px;
-}
-.sec02 .btn_02 {
-  padding-right: 50px;
 }
 .sec02 .tab_btn01,
 .sec02 .tab_btn02 {
@@ -342,8 +337,144 @@ body {
   transform: scale(1.05);
 }
 
+.sec03 .logo_img {
+  padding-top: 200px;
+  padding-bottom: 73px;
+}
+.sec03 .sec03_title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.sec03 .sec03_title h1 {
+  font-size: 40px;
+  color: #3F2A14;
+  line-height: 140%;
+  font-weight: 500;
+}
+.sec03 .line_img {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 56px;
+}
+.sec03 .paparenthesis_title {
+  background: url("../images/skin1004_brand_parentheses.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sec03 .paparenthesis_title p {
+  text-align: center;
+  font-size: 24px;
+  color: #746F64;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.sec04 .sec04_title {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+.sec04 .sec04_title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.sec04 .sec04_img {
+  width: 100%;
+}
+
+.sec05 .sec05_title {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 200px;
+}
+.sec05 .sec05_title h1 {
+  font-size: 40px;
+  color: #3f2a14;
+  line-height: 140%;
+  font-weight: 500;
+}
+.sec05 .line_img {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 56px;
+}
+.sec05 .paparenthesis_title p {
+  text-align: center;
+  font-size: 24px;
+  color: #746f64;
+  font-weight: 400;
+  line-height: 200%;
+}
+.sec05 .circle_img {
+  padding: 99px 114px;
+  border: 1px solid rgba(128, 116, 93, 0.45);
+  border-radius: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec05 .circle_img02 {
+  padding: 101px 105px;
+  border: 1px solid rgba(128, 116, 93, 0.45);
+  border-radius: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec05 .plus_img {
+  padding: 135px 49px;
+}
+.sec05 .wrapper {
+  padding-top: 100px;
+}
+.sec05 .icon_text {
+  padding-top: 15px;
+}
+.sec05 .icon_text h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #80745D;
+}
+
+.sec06 .sec06_img {
+  background: url("../images/skin1004_brand_person_img.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 619px;
+}
+.sec06 .pt-200 {
+  padding-top: 200px;
+}
+.sec06 .sec06_title {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.sec06 span {
+  font-size: 40px;
+  font-weight: 300;
+  color: #FEF8EE;
+  line-height: 160%;
+}
+.sec06 .sec06_title h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #FEF8EE;
+  line-height: 160%;
+}
+
 .footer_container {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .footer_container .footer_text {
   padding-top: 50px;

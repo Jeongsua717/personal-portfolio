@@ -289,16 +289,15 @@ body{
 }
 // main-banner
 .sec02 {
-    .tab_btn { 
+    .tab_buttons_wrap { 
         margin-top: 100px;
     }
-
-    .tab_btn .col-3 {
+    .tab_buttons_wrap {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 54px;
     }
-
     .tab-button-link {
         display: flex; 
         justify-content: center;
@@ -314,12 +313,6 @@ body{
     }
     .tab-button-link:hover {
         transform: translateY(-5px);
-    }
-    .btn_01{
-      padding-left: 50px;
-    }
-    .btn_02{
-      padding-right: 50px;
     }
     .tab_btn01,
     .tab_btn02 {

@@ -161,64 +161,80 @@
     }
   // font
 
-body{
-    overflow-x: hidden;
-    width: 100%;
-    font-family: 'Pretendard';
-    position: relative;
+body {
+  overflow-x: hidden;
+  background-color: #FFFAFA;
+  width: 100%;
+  font-family: 'Pretendard';
+  position: relative;
 }
+
 .wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   max-height: 830px;
   width: 100%;
+
   .navbar {
     font-family: "Poppins", sans-serif;
     min-height: 80px;
   }
-  .navbar-brand { 
-    padding: 0; 
+
+  .navbar-brand {
+    padding: 0;
     height: 40px;
     max-width: 100%;
   }
-  .bg-nav{
+
+  .bg-nav {
     background-color: #FFFAFA;
     border-bottom: 1px solid #ccc;
   }
+
   .transparent-navbar {
     background-color: transparent;
     box-shadow: none;
     border-bottom: none;
     transition: background-color 0.3s ease-in-out;
   }
+
   .navbar-toggler {
     font-size: 1.25rem;
+
     &:focus {
-    box-shadow: none;
-       }
+      box-shadow: none;
+    }
   }
+
   .nav-link {
     color: #3c3c3c;
     font-size: 18px;
     font-weight: 400;
     transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #1C6343;
+    }
   }
-  .nav-link:hover {
-    color: #1C6343;
-  }
-  .nav-item{
+
+  .nav-item {
     padding-right: 30px;
+
+    a {
+      font-family: "Poppins", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+    }
   }
-  .nav-item a{
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+
+  .main-banner {
+    .swiper-slide {
+      min-height: 830px;
+    }
   }
-  .main-banner .swiper-slide{
-    min-height: 830px;
-  }
-  .main-banner{
+
+  .main_kv {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -229,49 +245,45 @@ body{
     overflow: hidden;
     position: relative;
   }
-  .main_title h1{
-    color: #3c3c3c;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 140%;
-    margin: 0;
-    letter-spacing: 0.03em;
+
+  .main_title {
+    padding-top: 315px;
+    h1 {
+      color: #3c3c3c;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 140%;
+      margin: 0;
+      letter-spacing: 0.03em;
     }
-  .main_title p{
-    color: #3c3c3c;
-    font-weight: 500;
-    padding-top: 25px;
-    font-size: 25px;
-    letter-spacing: 0.03em;
+
+    p {
+      color: #3c3c3c;
+      font-weight: 500;
+      padding-top: 25px;
+      font-size: 25px;
+      letter-spacing: 0.03em;
+    }
   }
-  .main-banner .swiper-slide {
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.main-banner .swiper-slide.slide01 {
-    background-image: url('../images/sec01_bg01.png');
 }
 
-.main-banner .swiper-slide.slide02 {
-    background-image: url('../images/sec01_bg02.png');
+.slide01 {
+  background: url('../images/sec01_bg01.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.main-banner .swiper-slide.slide03 {
-    background-image: url('../images/sec01_bg03.png');
+.slide02 {
+  background: url('../images/sec01_bg02.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.main-banner .main_content {
-    padding: 0;
-    position: relative;
-    z-index: 1;
-}
-}
-// main banner
 
+.slide03 {
+  background: url('../images/sec01_bg03.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .sec02_wrapper{
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,4 +1,7 @@
-let swipers = new Swiper('.mySwipers', {
+AOS.init();
+
+
+let swipers = new Swiper('.mySwipers , .main_kv', {
     slidesPerView: 1,
     direction: 'horizontal',
     loop: true,
@@ -10,7 +13,6 @@ let swipers = new Swiper('.mySwipers', {
     effect: 'fade',
     speed: 800,
 });
-
 
 
 

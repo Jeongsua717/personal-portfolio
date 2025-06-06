@@ -286,13 +286,14 @@ body {
   z-index: 1;
 }
 
-.sec02 .tab_btn {
+.sec02 .tab_buttons_wrap {
   margin-top: 100px;
 }
-.sec02 .tab_btn .col-3 {
+.sec02 .tab_buttons_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 54px;
 }
 .sec02 .tab-button-link {
   display: flex;
@@ -309,12 +310,6 @@ body {
 }
 .sec02 .tab-button-link:hover {
   transform: translateY(-5px);
-}
-.sec02 .btn_01 {
-  padding-left: 50px;
-}
-.sec02 .btn_02 {
-  padding-right: 50px;
 }
 .sec02 .tab_btn01,
 .sec02 .tab_btn02 {

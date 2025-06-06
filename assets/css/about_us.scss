@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    src: url(pre/Pretendard-Black.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    src: url(pre/Pretendard-ExtraBold.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    src: url(pre/Pretendard-Bold.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    src: url(pre/Pretendard-SemiBold.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    src: url(pre/Pretendard-Medium.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    src: url(pre/Pretendard-Regular.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    src: url(pre/Pretendard-Light.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    src: url(pre/Pretendard-ExtraLight.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    src: url(pre/Pretendard-Thin.woff) format('woff');
+  }
+  
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  @import url(https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css);
+
+  @font-face {
+    font-family: 'Dancing In The Rain';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dancing In The Rain'), url('DancingInTheRain-G3M1m.woff') format('woff');
+    }
+  // font
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Pretendard';
+    position: relative;
+    background-color: #FFFAFA;
+}
+.wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  max-height: 830px;
+  width: 100%;
+  .navbar {
+    font-family: "Poppins", sans-serif;
+    min-height: 80px;
+    transition: background-color 0.3s ease-in-out; 
+  }
+  .navbar-brand { 
+    padding: 0; 
+    height: 40px;
+    max-width: 100%;
+  }
+  .navbar-brand .logo-white {
+    display: block;
+  }
+  .navbar-brand .logo-black {
+    display: none;
+  }
+  .transparent-navbar {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: none;
+  }
+  .scrolled-navbar {
+    background-color: #FFFAFA;
+    border-bottom: 1px solid #ccc;
+  }
+  .scrolled-navbar .navbar-brand .logo-white {
+    display: none;
+  }
+  .scrolled-navbar .navbar-brand .logo-black {
+    display: block;
+  }
+  .navbar-toggler {
+    font-size: 1.25rem;
+    &:focus {
+    box-shadow: none;
+       }
+  }
+  .nav-link {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+  }
+  .scrolled-navbar .nav-link{
+    color: #3c3c3c;
+}
+  .nav-link:hover {
+    color: #1C6343;
+    border-radius: 50px;
+    font-weight: 500;
+  }
+  .nav-item{
+    padding-right: 30px;
+  }
+  .nav-item a{
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .main_title h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 140%;
+    margin: 0;
+    letter-spacing: 0.03em;
+    }
+  .main_title p{
+    color: #fff;
+    font-weight: 500;
+    padding-top: 30px;
+    font-size: 25px;
+    letter-spacing: 0.03em;
+  }
+  .main-banner{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 650px;
+    }
+  .top-banner{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 650px;
+  }
+.main-banner {
+    background-image: url('../images/about_us_main_bg.png');
+}
+.top-banner{
+  background-image: url('../images/sec04_img_02.png');
+}
+.main-banner .main_content {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+.top-banner .main_content{
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+}
+// main-banner
+.sec02{
+    .title{
+    font-size: 58px;
+    margin-top: 200px;
+    text-align: center;
+}
+}
+// sec02
+.sec03{
+    .top_img{
+      padding-top: 118px;
+      text-align: right;
+    }
+    .top_img img{
+      max-width: 100%;
+      height: auto;
+    }
+    .top_title{
+      padding-top: 247px;
+    }
+}

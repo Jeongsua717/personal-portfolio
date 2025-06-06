@@ -286,13 +286,14 @@ body {
   z-index: 1;
 }
 
-.sec02 .tab_btn {
+.sec02 .tab_buttons_wrap {
   margin-top: 100px;
 }
-.sec02 .tab_btn .col-3 {
+.sec02 .tab_buttons_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 54px;
 }
 .sec02 .tab-button-link {
   display: flex;
@@ -309,12 +310,6 @@ body {
 }
 .sec02 .tab-button-link:hover {
   transform: translateY(-5px);
-}
-.sec02 .btn_01 {
-  padding-left: 50px;
-}
-.sec02 .btn_02 {
-  padding-right: 50px;
 }
 .sec02 .tab_btn01,
 .sec02 .tab_btn02 {
@@ -387,8 +382,38 @@ body {
   line-height: 200%;
 }
 
+.sec04 .sec04_img {
+  background: url("../images/beplain_cream_bg_img.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 317px;
+}
+.sec04 .sec04_title {
+  text-align: center;
+}
+.sec04 span {
+  font-size: 30px;
+  color: #909090;
+}
+.sec04 .sec04_title h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1F4B3C;
+  line-height: 160%;
+}
+.sec04 .pt-100 {
+  padding-top: 100px;
+}
+
 .footer_container {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .footer_container .footer_text {
   padding-top: 50px;

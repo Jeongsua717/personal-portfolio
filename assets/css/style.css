@@ -160,6 +160,7 @@
 }
 body {
   overflow-x: hidden;
+  background-color: #FFFAFA;
   width: 100%;
   font-family: "Pretendard";
   position: relative;
@@ -212,12 +213,12 @@ body {
 .wrapper .nav-item a {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .wrapper .main-banner .swiper-slide {
   min-height: 830px;
 }
-.wrapper .main-banner {
+.wrapper .main_kv {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,6 +228,9 @@ body {
   justify-content: center;
   overflow: hidden;
   position: relative;
+}
+.wrapper .main_title {
+  padding-top: 315px;
 }
 .wrapper .main_title h1 {
   color: #3c3c3c;
@@ -243,28 +247,23 @@ body {
   font-size: 25px;
   letter-spacing: 0.03em;
 }
-.wrapper .main-banner .swiper-slide {
-  width: 100%;
+
+.slide01 {
+  background: url("../images/sec01_bg01.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.wrapper .main-banner .swiper-slide.slide01 {
-  background-image: url("../images/sec01_bg01.png");
+
+.slide02 {
+  background: url("../images/sec01_bg02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.wrapper .main-banner .swiper-slide.slide02 {
-  background-image: url("../images/sec01_bg02.png");
-}
-.wrapper .main-banner .swiper-slide.slide03 {
-  background-image: url("../images/sec01_bg03.png");
-}
-.wrapper .main-banner .main_content {
-  padding: 0;
-  position: relative;
-  z-index: 1;
+
+.slide03 {
+  background: url("../images/sec01_bg03.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sec02_wrapper {
