@@ -164,6 +164,9 @@ body {
   font-family: "Pretendard";
   position: relative;
 }
+body img {
+  cursor: pointer;
+}
 
 .wrapper {
   background-repeat: no-repeat;

@@ -389,6 +389,9 @@ body {
 .sec03_container {
   background-color: #FFFAFA;
 }
+.sec03_container a {
+  text-decoration: none;
+}
 .sec03_container .sec03_title h1 {
   margin-top: 80px;
   text-align: center;
@@ -406,6 +409,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-size: cover;
+  cursor: pointer;
 }
 .sec03_container .sec03_img02 {
   background-image: url("../images/sec04_img_02.png");
@@ -413,6 +417,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-size: cover;
+  cursor: pointer;
 }
 .sec03_container .sec03_sub_title {
   padding-top: 270px;

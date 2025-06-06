@@ -166,6 +166,9 @@ body{
     width: 100%;
     font-family: 'Pretendard';
     position: relative;
+    img{
+      cursor: pointer;
+    }
 }
 .wrapper {
   background-repeat: no-repeat;
