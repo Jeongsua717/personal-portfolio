@@ -315,4 +315,53 @@ body {
   font-weight: 400;
   line-height: 180%;
   color: #1c1c1c;
+}
+
+.sec04 .sec04_title {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 54px;
+  font-size: 40px;
+  color: #1C1C1C;
+  line-height: 140%;
+  font-weight: 600;
+}
+.sec04 .cv_title {
+  text-align: center;
+}
+.sec04 .cv_title h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #404040;
+  line-height: 160%;
+}
+.sec04 .cv_title p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #404040;
+  line-height: 160%;
+}
+.sec04 .cv_1 {
+  background-color: rgba(209, 238, 191, 0.5);
+  padding: 159px 97px;
+  border-radius: 500px;
+  position: relative;
+  left: 0;
+  z-index: 1;
+}
+.sec04 .cv_2 {
+  background-color: rgba(255, 199, 0, 0.3);
+  padding: 159px 97px;
+  border-radius: 500px;
+  position: relative;
+  left: -50px;
+  z-index: 3;
+}
+.sec04 .cv_3 {
+  background-color: rgba(13, 135, 255, 0.3);
+  padding: 159px 97px;
+  border-radius: 500px;
+  position: relative;
+  left: -100px;
+  z-index: 2;
 }/*# sourceMappingURL=about_us.css.map */
