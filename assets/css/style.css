@@ -164,6 +164,7 @@ body {
   width: 100%;
   font-family: "Pretendard";
   position: relative;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -176,17 +177,25 @@ body {
 .wrapper .navbar {
   font-family: "Poppins", sans-serif;
   min-height: 80px;
+  transition: background-color 0.3s ease-in-out;
+}
+.wrapper .navbar.menu-open {
+  background-color: #FFFAFA !important;
 }
 .wrapper .navbar-brand {
   padding: 0;
   height: 40px;
   max-width: 100%;
 }
-.wrapper .bg-nav {
+.wrapper .navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+.wrapper .navbar.bg-nav {
   background-color: #FFFAFA;
   border-bottom: 1px solid #ccc;
 }
-.wrapper .transparent-navbar {
+.wrapper .navbar.transparent-navbar {
   background-color: transparent;
   box-shadow: none;
   border-bottom: none;
@@ -204,9 +213,6 @@ body {
   font-weight: 400;
   transition: color 0.3s ease-in-out;
 }
-.wrapper .nav-link:hover {
-  color: #1C6343;
-}
 .wrapper .nav-item {
   padding-right: 30px;
 }
@@ -214,6 +220,102 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 300;
+}
+.wrapper .navbar__menu .dropdown {
+  position: static;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu {
+  border: none;
+  background-color: #FFFAFA;
+  padding: 20px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: block;
+  visibility: hidden;
+  pointer-events: none;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu[aria-labelledby=navbarDropdownBrand] {
+  padding: 10px;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu[aria-labelledby=navbarDropdownBrand] .container {
+  width: auto;
+  max-width: 100%;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu .brand-list {
+  padding: 20px;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu .brand-item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  padding-left: 930px;
+  padding-bottom: 20px;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu .brand-item:hover {
+  color: #166642;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu .brand-item span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu ul li {
+  margin-bottom: 8px;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu ul li a {
+  color: #666;
+  text-decoration: none;
+  padding-left: 800px;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu ul li a:hover {
+  color: #166642;
+}
+.wrapper .navbar__menu .dropdown .dropdown-menu img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.wrapper .navbar__menu .dropdown.show > .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+}
+.wrapper .navbar__menu .nav-item .nav-link {
+  position: relative;
+}
+.wrapper .navbar__menu .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease-in-out;
+}
+.wrapper .navbar__menu .nav-item .nav-link.dropdown-toggle::after {
+  display: none !important;
+}
+.wrapper .navbar__menu .nav-item.dropdown.show > .nav-link::after {
+  width: 100%;
 }
 .wrapper .main-banner .swiper-slide {
   min-height: 830px;
@@ -247,23 +349,14 @@ body {
   font-size: 25px;
   letter-spacing: 0.03em;
 }
-
-.slide01 {
-  background: url("../images/sec01_bg01.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.wrapper .slide01 {
+  background-image: url("../images/sec01_bg01.png");
 }
-
-.slide02 {
-  background: url("../images/sec01_bg02.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.wrapper .slide02 {
+  background-image: url("../images/sec01_bg02.png");
 }
-
-.slide03 {
-  background: url("../images/sec01_bg03.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.wrapper .slide03 {
+  background-image: url("../images/sec01_bg03.png");
 }
 
 .sec02_wrapper {

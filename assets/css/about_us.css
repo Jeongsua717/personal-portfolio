@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css);
 @font-face {
   font-family: "Pretendard";
@@ -290,6 +291,7 @@ body {
   font-size: 58px;
   margin-top: 200px;
   text-align: center;
+  color: #3c3c3c;
 }
 
 .sec03 .top_img {
@@ -322,46 +324,217 @@ body {
   padding-top: 200px;
   padding-bottom: 54px;
   font-size: 40px;
-  color: #1C1C1C;
+  color: #3c3c3c;
   line-height: 140%;
   font-weight: 600;
 }
 .sec04 .cv_title {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 .sec04 .cv_title h1 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   color: #404040;
-  line-height: 160%;
+  line-height: 140%;
+  margin-bottom: 5px;
 }
 .sec04 .cv_title p {
   font-size: 18px;
   font-weight: 400;
   color: #404040;
-  line-height: 160%;
+  line-height: 140%;
+}
+.sec04 .cv_1, .sec04 .cv_2, .sec04 .cv_3 {
+  width: 416px;
+  height: 416px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 .sec04 .cv_1 {
   background-color: rgba(209, 238, 191, 0.5);
-  padding: 159px 97px;
-  border-radius: 500px;
-  position: relative;
-  left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 .sec04 .cv_2 {
   background-color: rgba(255, 199, 0, 0.3);
-  padding: 159px 97px;
-  border-radius: 500px;
-  position: relative;
-  left: -50px;
-  z-index: 3;
+  margin-left: -100px;
+  z-index: 1;
 }
 .sec04 .cv_3 {
   background-color: rgba(13, 135, 255, 0.3);
-  padding: 159px 97px;
-  border-radius: 500px;
+  margin-left: -100px;
+  z-index: 3;
+}
+
+.sec05 .sec05_title {
+  padding-top: 200px;
+  text-align: center;
+}
+.sec05 .sec05_title h1 {
+  font-size: 40px;
+  color: #3c3c3c;
+  padding-bottom: 20px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.sec05 .sec05_title p {
+  font-size: 20px;
+  color: #3c3c3c;
+  font-weight: 400;
+  line-height: 140%;
+  padding-bottom: 70px;
+}
+.sec05 .cv_1, .sec05 .cv_2, .sec05 .cv_3, .sec05 .cv_4 {
+  width: 242px;
+  height: 242px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #E4E9E1;
+  flex-direction: column;
+}
+.sec05 .cv_icon {
+  padding-bottom: 18px;
+}
+.sec05 .cv_title p {
+  font-size: 22px;
+  color: #3c3c3c;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.sec06 {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  /* 타임라인 전체를 감싸는 래퍼 */
+  /* 중앙 세로 라인 */
+  /* 개별 타임라인 항목 */
+  /* 왼쪽 항목 */
+  /* 오른쪽 항목 */
+  /* 연도 텍스트 */
+  /* 제목 텍스트 */
+  /* 라인 위의 마커 (점) */
+  /* 왼쪽 항목 마커 위치 */
+  /* 오른쪽 항목 마커 위치 */
+}
+.sec06 .sec06_title {
+  padding-top: 200px;
+  text-align: center;
+  font-size: 40px;
+  color: #3c3c3c;
+  padding-bottom: 100px;
+  font-weight: 600;
+  line-height: 140%;
+}
+.sec06 .timeline_sec {
   position: relative;
-  left: -100px;
+  padding: 50px 0;
+}
+.sec06 .timeline-wrapper {
+  position: relative;
+  /* 자식 요소 절대 위치 기준 */
+  width: 100%;
+  padding: 20px 0;
+  /* 내부 상하 패딩 */
+  margin: 0 auto;
+  /* 가운데 정렬 */
+}
+.sec06 .timeline-vertical-line {
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  background-color: #3c3c3c;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.sec06 .timeline-item {
+  position: relative;
+  width: 45%;
+  margin-bottom: 165px;
+}
+.sec06 .timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+.sec06 .timeline-item.right {
+  left: 55%;
+  text-align: left;
+}
+.sec06 .timeline-content .year {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 5px;
+}
+.sec06 .timeline-content h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #808080;
+  line-height: 140%;
+}
+.sec06 .timeline-marker {
+  position: absolute;
+  top: -50%;
+  width: 20px;
+  height: 20px;
+  background-color: #3C3C3C;
+  border-radius: 50%;
+  border: 4px solid #FFFAFA;
+  transform: translateY(-50%);
   z-index: 2;
+}
+.sec06 .timeline-item.left .timeline-marker {
+  right: -12.8%;
+}
+.sec06 .timeline-item.right .timeline-marker {
+  left: -12.8%;
+}
+
+.footer_container {
+  margin-top: 200px;
+}
+.footer_container .footer_text {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 17%;
+}
+.footer_container .footer_img {
+  padding-bottom: 30px;
+}
+.footer_container .footer_text h2 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 15px;
+}
+.footer_container .footer_text p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+.footer_container .bg-green {
+  background-color: #1C6343;
+}
+.footer_container .check_marker {
+  margin-left: 100px;
 }/*# sourceMappingURL=about_us.css.map */

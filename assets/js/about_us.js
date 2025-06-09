@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    AOS.init({
-        offset: 300,
-        duration: 800,
-        once: true
-    });
-});
+             AOS.init({
+                 duration: 800
+             });
+        });
 
 window.addEventListener('scroll', function () {
     let navbar = document.querySelector('.navbar');

@@ -1,3 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+        offset: 300,
+        duration: 800,
+        once: true
+    });
+});
+
 window.addEventListener('scroll', function () {
     let navbar = document.querySelector('.navbar');
     let scrollPosition = window.scrollY;
