@@ -1,48 +1,50 @@
-@import url(https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css);
 @font-face {
   font-family: "Pretendard";
-  font-weight: 900;
-  src: url(pre/Pretendard-Black.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 800;
-  src: url(pre/Pretendard-ExtraBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 700;
-  src: url(pre/Pretendard-Bold.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 600;
-  src: url(pre/Pretendard-SemiBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 500;
-  src: url(pre/Pretendard-Medium.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 400;
-  src: url(pre/Pretendard-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 300;
-  src: url(pre/Pretendard-Light.woff) format("woff");
+  font-weight: 100;
+  font-display: swap;
+  src: local("Pretendard Thin"), url("../assets/fonts/Pretendard-Thin.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 200;
-  src: url(pre/Pretendard-ExtraLight.woff) format("woff");
+  font-display: swap;
+  src: local("Pretendard ExtraLight"), url("../assets/fonts/Pretendard-ExtraLight.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
-  font-weight: 100;
-  src: url(pre/Pretendard-Thin.woff) format("woff");
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"), url("../assets/fonts/Pretendard-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url("../assets/fonts/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Pretendard Medium"), url("../assets/fonts/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url("../assets/fonts/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url("../assets/fonts/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-display: swap;
+  src: local("Pretendard ExtraBold"), url("../assets/fonts/Pretendard-ExtraBold.woff") format("woff");
 }
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -152,18 +154,12 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: "Dancing In The Rain";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Dancing In The Rain"), url("DancingInTheRain-G3M1m.woff") format("woff");
-}
 body {
   overflow-x: hidden;
   width: 100%;
   font-family: "Pretendard";
   position: relative;
-  background-color: #FFFAFA;
+  background-color: #fffafa;
 }
 
 .wrapper {
@@ -195,7 +191,7 @@ body {
   border-bottom: none;
 }
 .wrapper .scrolled-navbar {
-  background-color: #FFFAFA;
+  background-color: #fffafa;
   border-bottom: 1px solid #ccc;
 }
 .wrapper .scrolled-navbar .navbar-brand .logo-white {
@@ -219,7 +215,7 @@ body {
   color: #3c3c3c;
 }
 .wrapper .nav-link:hover {
-  color: #1C6343;
+  color: #1c6343;
   border-radius: 50px;
   font-weight: 500;
 }
@@ -320,17 +316,16 @@ body {
   height: 100%;
 }
 .sec02 .tab_btn01 {
-  background-color: #F5F6F8;
+  background-color: #f5f6f8;
 }
 .sec02 .tab_btn02 {
-  background-color: #1C6343;
+  background-color: #1c6343;
 }
 .sec02 .tab-button-link img {
   display: block;
   max-width: 80%;
   max-height: 80%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 .sec02 .tab-button-link:hover img {
@@ -347,7 +342,7 @@ body {
 }
 .sec03 .sec03_title h1 {
   font-size: 40px;
-  color: #3F2A14;
+  color: #3f2a14;
   line-height: 140%;
   font-weight: 500;
 }
@@ -366,7 +361,7 @@ body {
 .sec03 .paparenthesis_title p {
   text-align: center;
   font-size: 24px;
-  color: #746F64;
+  color: #746f64;
   font-weight: 400;
   line-height: 200%;
 }
@@ -436,7 +431,7 @@ body {
 .sec05 .icon_text h2 {
   font-size: 20px;
   font-weight: 400;
-  color: #80745D;
+  color: #80745d;
 }
 
 .sec06 .sec06_img {
@@ -463,13 +458,13 @@ body {
 .sec06 span {
   font-size: 40px;
   font-weight: 300;
-  color: #FEF8EE;
+  color: #fef8ee;
   line-height: 160%;
 }
 .sec06 .sec06_title h1 {
   font-size: 40px;
   font-weight: 600;
-  color: #FEF8EE;
+  color: #fef8ee;
   line-height: 160%;
 }
 
@@ -499,7 +494,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .footer_container .bg-green {
-  background-color: #1C6343;
+  background-color: #1c6343;
 }
 .footer_container .check_marker {
   margin-left: 100px;

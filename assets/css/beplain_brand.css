@@ -1,48 +1,50 @@
-@import url(https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css);
 @font-face {
   font-family: "Pretendard";
-  font-weight: 900;
-  src: url(pre/Pretendard-Black.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 800;
-  src: url(pre/Pretendard-ExtraBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 700;
-  src: url(pre/Pretendard-Bold.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 600;
-  src: url(pre/Pretendard-SemiBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 500;
-  src: url(pre/Pretendard-Medium.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 400;
-  src: url(pre/Pretendard-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 300;
-  src: url(pre/Pretendard-Light.woff) format("woff");
+  font-weight: 100;
+  font-display: swap;
+  src: local("Pretendard Thin"), url("../assets/fonts/Pretendard-Thin.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 200;
-  src: url(pre/Pretendard-ExtraLight.woff) format("woff");
+  font-display: swap;
+  src: local("Pretendard ExtraLight"), url("../assets/fonts/Pretendard-ExtraLight.woff") format("woff");
 }
 @font-face {
   font-family: "Pretendard";
-  font-weight: 100;
-  src: url(pre/Pretendard-Thin.woff) format("woff");
+  font-weight: 300;
+  font-display: swap;
+  src: local("Pretendard Light"), url("../assets/fonts/Pretendard-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard Regular"), url("../assets/fonts/Pretendard-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-display: swap;
+  src: local("Pretendard Medium"), url("../assets/fonts/Pretendard-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard SemiBold"), url("../assets/fonts/Pretendard-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src: local("Pretendard Bold"), url("../assets/fonts/Pretendard-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-display: swap;
+  src: local("Pretendard ExtraBold"), url("../assets/fonts/Pretendard-ExtraBold.woff") format("woff");
 }
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -152,18 +154,12 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: "Dancing In The Rain";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Dancing In The Rain"), url("DancingInTheRain-G3M1m.woff") format("woff");
-}
 body {
   overflow-x: hidden;
   width: 100%;
   font-family: "Pretendard";
   position: relative;
-  background-color: #FFFAFA;
+  background-color: #fffafa;
 }
 
 .wrapper {
@@ -195,7 +191,7 @@ body {
   border-bottom: none;
 }
 .wrapper .scrolled-navbar {
-  background-color: #FFFAFA;
+  background-color: #fffafa;
   border-bottom: 1px solid #ccc;
 }
 .wrapper .scrolled-navbar .navbar-brand .logo-white {
@@ -219,7 +215,7 @@ body {
   color: #3c3c3c;
 }
 .wrapper .nav-link:hover {
-  color: #1C6343;
+  color: #1c6343;
   border-radius: 50px;
   font-weight: 500;
 }
@@ -287,13 +283,13 @@ body {
 }
 
 .sec02 .tab_buttons_wrap {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 .sec02 .tab_buttons_wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 54px;
+  gap: 3.375rem;
 }
 .sec02 .tab-button-link {
   display: flex;
@@ -320,17 +316,16 @@ body {
   height: 100%;
 }
 .sec02 .tab_btn01 {
-  background-color: #F5F6F8;
+  background-color: #f5f6f8;
 }
 .sec02 .tab_btn02 {
-  background-color: #1C6343;
+  background-color: #1c6343;
 }
 .sec02 .tab-button-link img {
   display: block;
   max-width: 80%;
   max-height: 80%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 .sec02 .tab-button-link:hover img {
@@ -340,44 +335,44 @@ body {
 .sec03 .balance_img {
   width: 100%;
   height: auto;
-  padding-top: 200px;
+  padding-top: 12.5rem;
 }
 .sec03 .balance_title {
-  padding-top: 200px;
-  padding-left: 133px;
+  padding-top: 12.5rem;
+  padding-left: 8.313rem;
 }
 .sec03 .balance_title h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 110%;
   letter-spacing: -0.05rem;
 }
 .sec03 .balance_title p {
-  padding-top: 21px;
+  padding-top: 1.313rem;
   color: #808080;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 200%;
 }
 .sec03 .ingredients_img {
   width: 100%;
   height: auto;
-  padding-top: 170px;
-  padding-left: 133px;
+  padding-top: 10.625rem;
+  padding-left: 8.313rem;
 }
 .sec03 .ingredients_title {
-  padding-top: 170px;
+  padding-top: 10.625rem;
 }
 .sec03 .ingredients_title h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 500;
   line-height: 110%;
   letter-spacing: -0.05rem;
 }
 .sec03 .ingredients_title p {
-  padding-top: 21px;
+  padding-top: 1.313rem;
   color: #808080;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 200%;
 }
@@ -399,47 +394,47 @@ body {
   text-align: center;
 }
 .sec04 span {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #909090;
 }
 .sec04 .sec04_title h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
-  color: #1F4B3C;
+  color: #1f4b3c;
   line-height: 160%;
 }
 .sec04 .pt-100 {
-  padding-top: 100px;
+  padding-top: 6.25rem;
 }
 
 .footer_container {
-  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 .footer_container .footer_text {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
   padding-left: 17%;
 }
 .footer_container .footer_img {
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 .footer_container .footer_text h2 {
   color: #fff;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
   letter-spacing: 0.03em;
   font-family: "Poppins", sans-serif;
-  padding-bottom: 15px;
+  padding-bottom: 0.938rem;
 }
 .footer_container .footer_text p {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 200;
   font-family: "Poppins", sans-serif;
 }
 .footer_container .bg-green {
-  background-color: #1C6343;
+  background-color: #1c6343;
 }
 .footer_container .check_marker {
-  margin-left: 100px;
+  margin-left: 6.25rem;
 }/*# sourceMappingURL=beplain_brand.css.map */

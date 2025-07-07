@@ -1,174 +1,184 @@
 @font-face {
-    font-family: 'Pretendard';
-    font-weight: 900;
-    src: url(pre/Pretendard-Black.woff) format('woff');
-  }
-  @font-face {
-    font-family: 'Pretendard';
-    font-weight: 800;
-    src: url(pre/Pretendard-ExtraBold.woff) format('woff');
-  }
-  @font-face {
-    font-family: 'Pretendard';
-    font-weight: 700;
-    src: url(pre/Pretendard-Bold.woff) format('woff');
-  }
-  @font-face {
-    font-family: 'Pretendard';
-    font-weight: 600;
-    src: url(pre/Pretendard-SemiBold.woff) format('woff');
-  }
-  @font-face {
-    font-family: 'Pretendard';
-    font-weight: 500;
-    src: url(pre/Pretendard-Medium.woff) format('woff');
-  }
-  @font-face {
-    font-family: 'Pretendard';
-    font-weight: 400;
-    src: url(pre/Pretendard-Regular.woff) format('woff');
-  }
-  @font-face {
-    font-family: 'Pretendard';
-    font-weight: 300;
-    src: url(pre/Pretendard-Light.woff) format('woff');
-  }
-  @font-face {
-    font-family: 'Pretendard';
-    font-weight: 200;
-    src: url(pre/Pretendard-ExtraLight.woff) format('woff');
-  }
-  @font-face {
-    font-family: 'Pretendard';
-    font-weight: 100;
-    src: url(pre/Pretendard-Thin.woff) format('woff');
-  }
-  
-  .poppins-thin {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .poppins-extralight {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .poppins-light {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .poppins-regular {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .poppins-semibold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .poppins-extrabold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .poppins-black {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .poppins-thin-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  .poppins-extralight-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .poppins-light-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .poppins-regular-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .poppins-medium-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .poppins-semibold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .poppins-bold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  .poppins-extrabold-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
-    font-style: italic;
-  }
-  
-  .poppins-black-italic {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-  }
-  @import url(https://cdn.jsdelivr.net/gh/sunghyunzz/eulyoo1945/eulyoo1945.css);
+  font-family: 'Pretendard';
+  font-weight: 100; // Thin
+  font-display: swap;
+  src: local('Pretendard Thin'),
+    url('../assets/fonts/Pretendard-Thin.woff') format('woff');
+}
 
-  @font-face {
-    font-family: 'Dancing In The Rain';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Dancing In The Rain'), url('DancingInTheRain-G3M1m.woff') format('woff');
-    }
-  // font
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200; // ExtraLight
+  font-display: swap;
+  src: local('Pretendard ExtraLight'),
+    url('../assets/fonts/Pretendard-ExtraLight.woff') format('woff');
+}
 
-body{
-    overflow-x: hidden;
-    width: 100%;
-    font-family: 'Pretendard';
-    position: relative;
-    img{
-      cursor: pointer;
-    }
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300; // Light
+  font-display: swap;
+  src: local('Pretendard Light'),
+    url('../assets/fonts/Pretendard-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400; // Regular
+  font-display: swap;
+  src: local('Pretendard Regular'),
+    url('../assets/fonts/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500; // Medium
+  font-display: swap;
+  src: local('Pretendard Medium'),
+    url('../assets/fonts/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600; // SemiBold
+  font-display: swap;
+  src: local('Pretendard SemiBold'),
+    url('../assets/fonts/Pretendard-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700; // Bold
+  font-display: swap;
+  src: local('Pretendard Bold'),
+    url('../assets/fonts/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 800; // ExtraBold
+  font-display: swap;
+  src: local('Pretendard ExtraBold'),
+    url('../assets/fonts/Pretendard-ExtraBold.woff') format('woff');
+}
+
+.poppins-thin {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+// font
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Pretendard';
+  position: relative;
+  img {
+    cursor: pointer;
+  }
 }
 .wrapper {
   background-repeat: no-repeat;
@@ -177,16 +187,16 @@ body{
   max-height: 830px;
   width: 100%;
   .navbar {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     min-height: 80px;
   }
-  .navbar-brand { 
-    padding: 0; 
+  .navbar-brand {
+    padding: 0;
     height: 40px;
     max-width: 100%;
   }
-  .bg-nav{
-    background-color: #FFFAFA;
+  .bg-nav {
+    background-color: #fffafa;
     border-bottom: 1px solid #ccc;
   }
   .transparent-navbar {
@@ -198,8 +208,8 @@ body{
   .navbar-toggler {
     font-size: 1.25rem;
     &:focus {
-    box-shadow: none;
-       }
+      box-shadow: none;
+    }
   }
   .nav-link {
     color: #3c3c3c;
@@ -208,117 +218,115 @@ body{
     transition: color 0.3s ease-in-out;
   }
   .nav-link:hover {
-    color: #1C6343;
+    color: #1c6343;
   }
-  .nav-item{
+  .nav-item {
     padding-right: 30px;
   }
-  .nav-item a{
-    font-family: "Poppins", sans-serif;
+  .nav-item a {
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 300;
   }
 }
 // nav
-.title{
-    font-size: 58px;
-    margin-top: 200px;
-    text-align: center;
+.title {
+  font-size: 3.625rem;
+  margin-top: 12.5rem;
+  text-align: center;
 }
 .tab-button-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
-.tab_btn{
-    margin-top: 50px;
+.tab_btn {
+  margin-top: 3.125rem;
 }
-.tab_btn01{
-    background-color: #1C6343;
-    color: #FFFAFA;
-    padding: 19px 79px 19px 79px;
-    border-radius: 50px;
+.tab_btn01 {
+  background-color: #1c6343;
+  color: #fffafa;
+  padding: 1.188rem 4.938rem 1.188rem 4.938rem;
+  border-radius: 3.125rem;
 }
-.tab_btn02{
-    background-color: #fff;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #D1CFCF;
-    border-radius: 50px;
-    padding: 19px 79px 19px 79px;
-    color: #808080;
+.tab_btn02 {
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d1cfcf;
+  border-radius: 3.125rem;
+  padding: 1.188rem 4.938rem 1.188rem 4.938rem;
+  color: #808080;
 }
-.tab_btn01 h2{
-    font-size: 26px;
-    font-weight: 400;
-    text-align: right;
+.tab_btn01 h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-align: right;
 }
-.tab_btn02 h2{
-    font-size: 26px;
-    font-weight: 400;
-    text-align: left;
+.tab_btn02 h2 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  text-align: left;
 }
 // tab_btn
 
-.event_box{
-    margin-top: 80px;
+.event_box {
+  margin-top: 5rem;
 }
-.event-text h3{
-    color: #9C9C9C;
-    font-size: 28px;
-    font-weight: 600;
+.event-text h3 {
+  color: #9c9c9c;
+  font-size: 1.75rem;
+  font-weight: 600;
 }
-.event-text h4{
-    color: #3c3c3c;
-    font-weight: 700;
-    font-size: 28px;
+.event-text h4 {
+  color: #3c3c3c;
+  font-weight: 700;
+  font-size: 1.75rem;
 }
-.event-text h5{
-    color: #9c9c9c;
-    font-weight: 500;
-    font-size: 20px;
-    margin-top: 26px;
+.event-text h5 {
+  color: #9c9c9c;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-top: 1.625rem;
 }
 .event-text h3,
 .event-text h4 {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 .event-text h3 {
-    margin-right: 14px;
+  margin-right: 0.875rem;
 }
-.event-text{
-    margin-top: 32px;
+.event-text {
+  margin-top: 2rem;
 }
 
-.footer_container{
-    margin-top: 200px;
-  .footer_text{
-    padding-top: 50px;
-    padding-bottom: 50px;
+.footer_container {
+  margin-top: 12.5rem;
+  .footer_text {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
     padding-left: 17%;
-
   }
-  .footer_img{
-    padding-bottom: 30px;
-
+  .footer_img {
+    padding-bottom: 1.875rem;
   }
-  .footer_text h2{
+  .footer_text h2 {
     color: #fff;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 300;
     letter-spacing: 0.03em;
-    font-family: "Poppins", sans-serif;
-    padding-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 0.938rem;
   }
-  .footer_text p{
+  .footer_text p {
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 200;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
-  .bg-green{
-    background-color: #1C6343;
+  .bg-green {
+    background-color: #1c6343;
   }
 }
 // footer
