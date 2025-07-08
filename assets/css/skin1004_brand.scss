@@ -172,12 +172,18 @@
 // font
 
 body {
+  font-size: 16px;
   overflow-x: hidden;
+  background-color: #fffafa;
   width: 100%;
   font-family: 'Pretendard';
   position: relative;
-  background-color: #fffafa;
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
 }
+
 .wrapper {
   background-repeat: no-repeat;
   background-size: cover;
@@ -261,14 +267,21 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
+    height: 650px;
     overflow: hidden;
-    min-height: 650px;
+    background-image: url('../images/sec04_img_01.png');
+    .main_title p {
+      color: #fff;
+      font-weight: 600;
+      padding-top: 1.875rem;
+      font-size: 2.5rem;
+      letter-spacing: 0.03em;
+    }
   }
   .top-banner {
     width: 100%;
@@ -278,13 +291,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 650px;
-  }
-  .main-banner {
-    background-image: url('../images/sec04_img_01.png');
-  }
-  .top-banner {
+    height: 650px;
     background-image: url('../images/sec04_img_02.png');
+    .main_title p {
+      color: #fff;
+      font-weight: 600;
+      padding-top: 1.875rem;
+      font-size: 2.5rem;
+      letter-spacing: 0.03em;
+    }
+    .logo {
+      width: 100%;
+    }
   }
   .main-banner .main_content {
     padding: 0;
@@ -396,6 +414,7 @@ body {
     font-size: 40px;
     font-weight: 500;
     line-height: 140%;
+    text-align: center;
   }
   .sec04_img {
     width: 100%;
@@ -427,27 +446,26 @@ body {
     font-weight: 400;
     line-height: 200%;
   }
-  .circle_img {
-    padding: 99px 114px;
+  .circle_img,
+  .circle_img02 {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
     border: 1px solid rgba(128, 116, 93, 0.45);
-    border-radius: 500px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
-  .circle_img02 {
-    padding: 101px 105px;
-    border: 1px solid rgba(128, 116, 93, 0.45);
-    border-radius: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .plus_img {
-    padding: 135px 49px;
+    width: 50px;
+    height: 50px;
+    margin-top: 80px;
   }
-  .wrapper {
+  .sec05_wrapper {
     padding-top: 100px;
   }
   .icon_text {
@@ -475,7 +493,7 @@ body {
     min-height: 619px;
   }
   .pt-200 {
-    padding-top: 200px;
+    padding-top: 100px;
   }
   .sec06_title {
     text-align: center;
@@ -527,3 +545,509 @@ body {
   }
 }
 // footer
+@media (max-width: 768px) {
+  .wrapper {
+    .main-banner,
+    .top-banner {
+      max-width: 100%;
+      height: 500px;
+      .main_title p {
+        font-weight: 200;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        white-space: nowrap;
+      }
+      .logo {
+        width: 150px;
+      }
+      .main-banner .main_content {
+        padding: 0;
+        position: relative;
+        z-index: 1;
+      }
+      .top-banner .main_content {
+        padding: 0;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    // main-banner
+  }
+  .sec02 {
+    .tab_buttons_wrap {
+      margin-top: 3.25rem;
+    }
+    .tab_buttons_wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.375rem;
+    }
+    .tab-button-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+    .tab-button-link:hover {
+      transform: translateY(-5px);
+    }
+    .tab_btn01,
+    .tab_btn02 {
+      width: 100%;
+      height: 100%;
+    }
+    .tab-button-link img {
+      display: block;
+      max-width: 80%;
+      max-height: 80%;
+      object-fit: contain;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    .tab-button-link:hover img {
+      transform: scale(1.05);
+    }
+  }
+  // sec02
+  .sec03 {
+    .logo_img {
+      padding-top: 50px;
+      padding-bottom: 25px;
+    }
+    .sec03_title {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+    .sec03_title h1 {
+      font-size: 1.5rem;
+      color: #3f2a14;
+      line-height: 140%;
+      font-weight: 300;
+    }
+    .line_img {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding-bottom: 25px;
+    }
+    .paparenthesis_title {
+      background: url('../images/skin1004_brand_parentheses.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+    .paparenthesis_title p {
+      text-align: center;
+      font-size: 1rem;
+      color: #746f64;
+      font-weight: 200;
+      line-height: 140%;
+    }
+  }
+  // sec03
+  .sec04 {
+    .sec04_title {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .sec04_title {
+      font-size: 1.75rem;
+      font-weight: 300;
+      line-height: 140%;
+      text-align: center;
+    }
+    .sec04_img {
+      width: 100%;
+    }
+  }
+  // sec04
+  .sec05 {
+    .sec05_title {
+      text-align: center;
+      padding-bottom: 1.5rem;
+      padding-top: 2rem;
+    }
+    .sec05_title h1 {
+      font-size: 1.5rem;
+      color: #3f2a14;
+      line-height: 140%;
+      font-weight: 300;
+    }
+    .line_img {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding-bottom: 1.5rem;
+    }
+    .paparenthesis_title p {
+      text-align: center;
+      font-size: 1rem;
+      color: #746f64;
+      font-weight: 200;
+      line-height: 200%;
+    }
+    .circle_img,
+    .circle_img02 {
+      width: 130px;
+      height: 130px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      border: 1px solid rgba(128, 116, 93, 0.45);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .plus_img {
+      width: 20px;
+      height: 20px;
+      margin-top: 60px;
+    }
+    .sec05_wrapper {
+      padding-top: 1.875rem;
+    }
+    .icon01 {
+      width: 40px;
+      height: auto;
+    }
+    .icon02 {
+      width: 40px;
+      height: auto;
+    }
+    .icon_text {
+      padding-top: 15px;
+    }
+    .icon_text h2 {
+      font-size: 1rem;
+      font-weight: 200;
+      color: #80745d;
+    }
+  }
+  // sec05
+  .sec06 {
+    .sec06_img {
+      background: url('../images/skin1004_brand_person_img.png');
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      min-height: 300px;
+    }
+    .pt-200 {
+      padding-top: 3rem;
+    }
+    .sec06_title {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    span {
+      font-size: 1.5rem;
+      font-weight: 200;
+      color: #fef8ee;
+      line-height: 160%;
+    }
+    .sec06_title h1 {
+      font-size: 1.875rem;
+      font-weight: 400;
+      color: #fef8ee;
+      line-height: 160%;
+    }
+  }
+  .footer_container {
+    margin-top: 3.125rem;
+    .footer_text {
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+      padding-left: 4%;
+    }
+    .footer_img {
+      padding-bottom: 1.5rem;
+    }
+    .footer_text h2 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      padding-bottom: 0.838rem;
+    }
+    .footer_text p {
+      font-size: 0.875rem;
+      font-weight: 200;
+    }
+  }
+  // footer
+}
+@media (max-width: 376px) {
+  .wrapper {
+    .main-banner,
+    .top-banner {
+      max-width: 100%;
+      height: 230px;
+      .main_title p {
+        font-weight: 100;
+        padding-top: 0.5rem;
+        font-size: 1rem;
+        white-space: nowrap;
+      }
+      .logo {
+        width: 80px;
+      }
+      .main-banner .main_content {
+        padding: 0;
+        position: relative;
+        z-index: 1;
+      }
+      .top-banner .main_content {
+        padding: 0;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    // main-banner
+  }
+  .sec02 {
+    .tab_buttons_wrap {
+      margin-top: 1.875rem;
+    }
+    .tab_buttons_wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.375rem;
+    }
+    .tab-button-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+    .tab-button-link:hover {
+      transform: translateY(-5px);
+    }
+    .tab_btn01,
+    .tab_btn02 {
+      width: 100%;
+      height: 100%;
+    }
+    .tab-button-link img {
+      display: block;
+      max-width: 60%;
+      max-height: 60%;
+      object-fit: contain;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    .tab-button-link:hover img {
+      transform: scale(1.05);
+    }
+  }
+  // sec02
+  .sec03 {
+    .logo_img {
+      padding-top: 2rem;
+      padding-bottom: 1.25rem;
+      width: 20%;
+      margin: auto;
+    }
+    .sec03_title {
+      text-align: center;
+      padding-bottom: 1.25rem;
+    }
+    .sec03_title h1 {
+      font-size: 1.125rem;
+      color: #3f2a14;
+      line-height: 140%;
+      font-weight: 200;
+    }
+    .line_img {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding-bottom: 1.25rem;
+    }
+    .paparenthesis_title {
+      background: url('../images/skin1004_brand_parentheses.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: auto;
+      img {
+        width: 100%;
+      }
+    }
+    .paparenthesis_title p {
+      text-align: center;
+      font-size: 0.625rem;
+      color: #746f64;
+      font-weight: 100;
+      line-height: 140%;
+      white-space: nowrap;
+    }
+  }
+  // sec03
+  .sec04 {
+    .sec04_title {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .sec04_title {
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 140%;
+      text-align: center;
+    }
+    .sec04_img {
+      width: 50%;
+      margin: auto;
+    }
+  }
+  // sec04
+  .sec05 {
+    .sec05_title {
+      text-align: center;
+      padding-bottom: 1.25rem;
+      padding-top: 1.25rem;
+    }
+    .sec05_title h1 {
+      font-size: 1.125rem;
+      color: #3f2a14;
+      line-height: 140%;
+      font-weight: 300;
+    }
+    .line_img {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding-bottom: 1.25rem;
+    }
+    .paparenthesis_title p {
+      text-align: center;
+      font-size: 0.625rem;
+      color: #746f64;
+      font-weight: 100;
+      line-height: 140%;
+      white-space: nowrap;
+    }
+    .circle_img,
+    .circle_img02 {
+      width: 100px;
+      height: 100px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      border: 1px solid rgba(128, 116, 93, 0.45);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .plus_img {
+      width: 20px;
+      height: 20px;
+      margin-top: 40px;
+    }
+    .sec05_wrapper {
+      padding-top: 1.875rem;
+    }
+    .icon01 {
+      width: 20px;
+      height: auto;
+    }
+    .icon02 {
+      width: 20px;
+      height: auto;
+    }
+    .icon_text {
+      padding-top: 15px;
+    }
+    .icon_text h2 {
+      font-size: 0.875rem;
+      font-weight: 100;
+      color: #80745d;
+    }
+  }
+  // sec05
+  .sec06 {
+    .sec06_img {
+      background: url('../images/skin1004_brand_person_img.png');
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      min-height: 200px;
+    }
+    .pt-200 {
+      padding-top: 3rem;
+    }
+    .sec06_title {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+    span {
+      font-size: 0.875rem;
+      font-weight: 100;
+      color: #fef8ee;
+      line-height: 160%;
+    }
+    .sec06_title h1 {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #fef8ee;
+      line-height: 140%;
+    }
+  }
+  .footer_container {
+    margin-top: 3.125rem;
+    .footer_text {
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+      padding-left: 4%;
+    }
+    .footer_img {
+      padding-bottom: 1.3rem;
+      img {
+        width: 18%;
+      }
+    }
+    .footer_text h2 {
+      font-size: 0.875rem;
+      font-weight: 300;
+      padding-bottom: 0.628rem;
+    }
+    .footer_text p {
+      font-size: 0.75rem;
+      font-weight: 200;
+    }
+  }
+  // footer
+}
