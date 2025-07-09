@@ -681,6 +681,183 @@ body a {
     font-weight: 200;
   }
 }
+@media (max-width: 590px) {
+  .wrapper .main-banner,
+  .wrapper .top-banner {
+    max-width: 100%;
+    height: 500px;
+    margin-top: 30px;
+  }
+  .wrapper .main-banner .main_title p,
+  .wrapper .top-banner .main_title p {
+    font-weight: 200;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+  .wrapper .main-banner .logo,
+  .wrapper .top-banner .logo {
+    width: 80px;
+  }
+  .wrapper .main-banner .logo02,
+  .wrapper .top-banner .logo02 {
+    width: 120px;
+  }
+  .wrapper .main-banner .main-banner .main_content,
+  .wrapper .top-banner .main-banner .main_content {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .wrapper .main-banner .top-banner .main_content,
+  .wrapper .top-banner .top-banner .main_content {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .sec02 .tab_buttons_wrap {
+    margin-top: 3.25rem;
+  }
+  .sec02 .tab_buttons_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.375rem;
+  }
+  .sec02 .tab-button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+  }
+  .sec02 .tab-button-link:hover {
+    transform: translateY(-5px);
+  }
+  .sec02 .tab_btn01,
+  .sec02 .tab_btn02 {
+    width: 100%;
+    height: 100%;
+  }
+  .sec02 .tab-button-link img {
+    display: block;
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  .sec02 .tab-button-link:hover img {
+    transform: scale(1.05);
+  }
+  .sec03 .nav-tabs {
+    justify-content: center;
+    border-bottom: none;
+    padding: 1.25rem 0 1.125rem 0;
+  }
+  .sec03 .nav-tabs li:nth-child(1n+2) {
+    border-left: 1px solid #999;
+    padding: 0;
+  }
+  .sec03 .nav-item {
+    padding: 0;
+  }
+  .sec03 .nav-tabs li a.nav-link {
+    border: none;
+    border-radius: 0;
+    color: #999;
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: transparent;
+    justify-content: center;
+  }
+  .sec03 .nav-tabs li a.nav-link:hover {
+    color: #8d6734;
+    border-color: transparent;
+  }
+  .sec03 .nav-tabs li a.nav-link.active {
+    color: #8d6734;
+    font-weight: 300;
+    background-color: transparent;
+    border-bottom: none;
+  }
+  .sec04 .product_title {
+    text-align: center;
+  }
+  .sec04 .product_title h1 {
+    font-size: 1.2rem;
+    color: #3c3c3c;
+    font-weight: 300;
+    padding-top: 1rem;
+  }
+  .sec04 .product_title p {
+    font-size: 0.875rem;
+    color: #999;
+    font-weight: 200;
+    padding: 0.25rem 0 1.25rem 0;
+  }
+  .sec04 .product_explain h1 {
+    text-align: center;
+    font-size: 1rem;
+    color: #999;
+    font-weight: 300;
+    line-height: 140%;
+    padding-bottom: 1rem;
+    padding-top: 1.2rem;
+  }
+  .sec04 .product_explain h5 {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #999;
+    font-weight: 200;
+    line-height: 140%;
+  }
+  .sec04 .product_explain p {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #999;
+    font-weight: 200;
+    line-height: 140%;
+  }
+  .sec04 .p-t-40 {
+    padding-top: 0rem;
+  }
+  .sec04 .product_img {
+    width: 50%;
+    margin: auto;
+  }
+  .footer_container {
+    margin-top: 3.125rem;
+  }
+  .footer_container .footer_text {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    padding-left: 4%;
+  }
+  .footer_container .footer_img {
+    padding-bottom: 1.3rem;
+  }
+  .footer_container .footer_img img {
+    width: 18%;
+  }
+  .footer_container .footer_text h2 {
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding-bottom: 0.628rem;
+  }
+  .footer_container .footer_text p {
+    font-size: 0.75rem;
+    font-weight: 200;
+  }
+}
 @media (max-width: 376px) {
   .wrapper .main-banner,
   .wrapper .top-banner {

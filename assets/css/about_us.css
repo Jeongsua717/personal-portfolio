@@ -819,6 +819,227 @@ body a {
     font-weight: 200;
   }
 }
+@media (max-width: 590px) {
+  .wrapper .main-banner {
+    max-width: 100%;
+    height: 500px;
+  }
+  .wrapper .main-banner .main_title h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .wrapper .main-banner .main_title p {
+    font-weight: 200;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+  }
+  .wrapper .main-banner .main-banner .main_content {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .wrapper .sec02 {
+    max-width: 100%;
+  }
+  .wrapper .sec02 .title {
+    font-size: 2.188rem;
+    margin-top: 3.25rem;
+    font-weight: 400;
+  }
+  .wrapper .sec03 .top_img {
+    padding-top: 3.25rem;
+  }
+  .wrapper .sec03 .top_img img {
+    max-width: 100%;
+    height: auto;
+  }
+  .wrapper .sec03 .top_title {
+    padding-top: 2rem;
+    margin-left: 0;
+  }
+  .wrapper .sec03 .top_title h1 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    line-height: 140%;
+  }
+  .wrapper .sec03 .top_title p {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 160%;
+  }
+  .sec04 .sec04_title {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    font-size: 1.75rem;
+    font-weight: 300;
+  }
+  .sec04 .cv_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 1.25rem;
+  }
+  .sec04 .cv_title h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 140%;
+    margin-bottom: 0.2rem;
+  }
+  .sec04 .cv_title p {
+    display: none;
+  }
+  .sec04 .cv_1,
+  .sec04 .cv_2,
+  .sec04 .cv_3 {
+    width: 220px;
+    height: 220px;
+  }
+  .sec04 .cv_2 {
+    margin-left: -6.25rem;
+  }
+  .sec04 .cv_3 {
+    margin-left: -6.25rem;
+  }
+  .sec05 .sec05_title {
+    padding-top: 1.875rem;
+    text-align: center;
+  }
+  .sec05 .sec05_title h1 {
+    font-size: 1.75rem;
+    padding-bottom: 1rem;
+    font-weight: 300;
+  }
+  .sec05 .sec05_title p {
+    font-size: 0.813rem;
+    font-weight: 400;
+    padding-bottom: 1.875rem;
+  }
+  .sec05 .cv_1,
+  .sec05 .cv_2,
+  .sec05 .cv_3,
+  .sec05 .cv_4 {
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    margin: auto;
+  }
+  .sec05 .cv_icon {
+    padding-bottom: 1.125rem;
+  }
+  .sec05 .cv_title p {
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  .sec05 .row.gx-3 > .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .sec06 {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    /* 타임라인 전체를 감싸는 래퍼 */
+    /* 중앙 세로 라인 */
+    /* 개별 타임라인 항목 */
+    /* 왼쪽 항목 */
+    /* 오른쪽 항목 */
+    /* 연도 텍스트 */
+    /* 제목 텍스트 */
+    /* 라인 위의 마커 (점) */
+    /* 왼쪽 항목 마커 위치 */
+    /* 오른쪽 항목 마커 위치 */
+  }
+  .sec06 .sec06_title {
+    padding-top: 3.25rem;
+    font-size: 2.188rem;
+    padding-bottom: 3.25rem;
+    font-weight: 400;
+  }
+  .sec06 .timeline_sec {
+    position: relative;
+    padding: 3.125rem 0;
+  }
+  .sec06 .timeline-wrapper {
+    position: relative;
+    /* 자식 요소 절대 위치 기준 */
+    width: 100%;
+    padding: 1.25rem 0;
+    /* 내부 상하 패딩 */
+    margin: 0 auto;
+    /* 가운데 정렬 */
+  }
+  .sec06 .timeline-vertical-line {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+  .sec06 .timeline-item {
+    position: relative;
+    width: 45%;
+    margin-bottom: 10.313rem;
+  }
+  .sec06 .timeline-item.left {
+    left: 0;
+    text-align: right;
+  }
+  .sec06 .timeline-item.right {
+    left: 55%;
+    text-align: left;
+  }
+  .sec06 .timeline-content .year {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 0;
+  }
+  .sec06 .timeline-content h3 {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .sec06 .timeline-marker {
+    position: absolute;
+    top: -50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  .sec06 .timeline-item.left .timeline-marker {
+    right: -14%;
+  }
+  .sec06 .timeline-item.right .timeline-marker {
+    left: -14%;
+  }
+  .footer_container {
+    margin-top: 3.125rem;
+  }
+  .footer_container .footer_text {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    padding-left: 4%;
+  }
+  .footer_container .footer_img {
+    padding-bottom: 1.5rem;
+  }
+  .footer_container .footer_text h2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-bottom: 0.838rem;
+  }
+  .footer_container .footer_text p {
+    font-size: 0.875rem;
+    font-weight: 200;
+  }
+}
 @media (max-width: 376px) {
   .wrapper {
     margin-top: 1.875rem;

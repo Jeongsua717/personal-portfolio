@@ -816,6 +816,271 @@ header .bg-nav {
     font-weight: 200;
   }
 }
+@media (max-width: 590px) {
+  .wrapper {
+    margin-top: 2rem;
+  }
+  .wrapper .main-banner,
+  .wrapper .top-banner {
+    max-width: 100%;
+    height: 500px;
+  }
+  .wrapper .main-banner .main_title p,
+  .wrapper .top-banner .main_title p {
+    font-weight: 200;
+    padding-top: 1rem;
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+  .wrapper .main-banner .logo,
+  .wrapper .top-banner .logo {
+    width: 120px;
+  }
+  .wrapper .main-banner .main-banner .main_content,
+  .wrapper .top-banner .main-banner .main_content {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .wrapper .main-banner .top-banner .main_content,
+  .wrapper .top-banner .top-banner .main_content {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .sec02 .tab_buttons_wrap {
+    margin-top: 3.25rem;
+  }
+  .sec02 .tab_buttons_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.375rem;
+  }
+  .sec02 .tab-button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+  }
+  .sec02 .tab-button-link:hover {
+    transform: translateY(-5px);
+  }
+  .sec02 .tab_btn01,
+  .sec02 .tab_btn02 {
+    width: 100%;
+    height: 100%;
+  }
+  .sec02 .tab-button-link img {
+    display: block;
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  .sec02 .tab-button-link:hover img {
+    transform: scale(1.05);
+  }
+  .sec03 .logo_img {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    width: 30%;
+    margin: auto;
+  }
+  .sec03 .sec03_title {
+    text-align: center;
+    padding-bottom: 1.2rem;
+  }
+  .sec03 .sec03_title h1 {
+    font-size: 1.2rem;
+    color: #3f2a14;
+    line-height: 140%;
+    font-weight: 200;
+  }
+  .sec03 .line_img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 1.25rem;
+  }
+  .sec03 .paparenthesis_title {
+    background: url("../images/skin1004_brand_parentheses.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+  }
+  .sec03 .paparenthesis_title img {
+    width: 100%;
+  }
+  .sec03 .paparenthesis_title p {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #746f64;
+    font-weight: 100;
+    line-height: 140%;
+    white-space: nowrap;
+  }
+  .sec04 .sec04_img {
+    background: url("../images/beplain_cream_bg_img.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+  }
+  .sec04 .sec04_title {
+    text-align: center;
+  }
+  .sec04 span {
+    font-size: 1.125rem;
+    color: #909090;
+    font-weight: 200;
+  }
+  .sec04 .sec04_title h1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #1f4b3c;
+    line-height: 160%;
+  }
+  .sec04 .pt-100 {
+    padding-top: 6.25rem;
+  }
+  .sec05 .justify-content-between {
+    justify-content: flex-start !important;
+  }
+  .sec05 .sec05_title {
+    text-align: center;
+    padding-bottom: 1.25rem;
+    padding-top: 1.5rem;
+  }
+  .sec05 .sec05_title h1 {
+    font-size: 1rem;
+    color: #3f2a14;
+    line-height: 140%;
+    font-weight: 300;
+  }
+  .sec05 .line_img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 1.25rem;
+  }
+  .sec05 .paparenthesis_title p {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #746f64;
+    font-weight: 100;
+    line-height: 140%;
+    white-space: nowrap;
+  }
+  .sec05 .circle_img,
+  .sec05 .circle_img02 {
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid rgba(128, 116, 93, 0.45);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .sec05 .plus_img {
+    width: 30px;
+    height: 30px;
+    margin: 3.5rem 1rem 0 1rem;
+  }
+  .sec05 .sec05_wrapper {
+    padding-top: 1.875rem;
+  }
+  .sec05 .icon01 {
+    width: 30px;
+    height: auto;
+  }
+  .sec05 .icon02 {
+    width: 30px;
+    height: auto;
+  }
+  .sec05 .icon_text {
+    padding-top: 0.938rem;
+  }
+  .sec05 .icon_text h2 {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #80745d;
+  }
+  .sec06 .sec06_img {
+    background: url("../images/skin1004_brand_person_img.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+  }
+  .sec06 .pt-200 {
+    padding-top: 3rem;
+  }
+  .sec06 .sec06_title {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .sec06 span {
+    font-size: 0.875rem;
+    font-weight: 100;
+    color: #fef8ee;
+    line-height: 160%;
+  }
+  .sec06 .sec06_title h1 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fef8ee;
+    line-height: 140%;
+  }
+  .footer_container {
+    margin-top: 3.125rem;
+  }
+  .footer_container .footer_text {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    padding-left: 4%;
+  }
+  .footer_container .footer_img {
+    padding-bottom: 1.3rem;
+  }
+  .footer_container .footer_img img {
+    width: 18%;
+  }
+  .footer_container .footer_text h2 {
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding-bottom: 0.628rem;
+  }
+  .footer_container .footer_text p {
+    font-size: 0.75rem;
+    font-weight: 200;
+  }
+}
 @media (max-width: 376px) {
   .wrapper {
     margin-top: 2rem;

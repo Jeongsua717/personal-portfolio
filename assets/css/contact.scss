@@ -768,6 +768,192 @@ body {
   }
   // footer
 }
+@media (max-width: 590px) {
+  .wrapper {
+    .main-banner {
+      max-width: 100%;
+      height: 500px;
+      .main_title h1 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 0;
+      }
+      .main_title p {
+        font-weight: 200;
+        padding-top: 1rem;
+        font-size: 1.1rem;
+        white-space: nowrap;
+      }
+      .main-banner .main_content {
+        padding: 0;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    // main-banner
+    .sec02 {
+      .sec02_title {
+        margin-top: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.188rem;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #3c3c3c;
+      }
+      .sec02_sub_title {
+        display: none;
+      }
+      .sec02_sub_title h1 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 140%;
+        padding: 3.188rem 0 0 2.313rem;
+      }
+      .sec02_sub_title p {
+        font-size: 1rem;
+        font-weight: 200;
+        padding: 0.5rem 1.5rem 0 2.313rem;
+      }
+      .contact_content_right {
+        border: 1px solid rgba(153, 153, 153, 0.4);
+        background-color: #fffafa;
+        border-radius: 10px;
+        padding: 1.125rem 1.125rem;
+        margin-top: 1.875rem;
+        margin-bottom: 1.875rem;
+      }
+      .btn-square {
+        border: 1px solid rgb(22, 102, 66);
+        border-radius: 3.125rem;
+        padding: 1.138rem 1.525rem;
+        background: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .btn-square:hover {
+        background-color: #166642;
+      }
+      .btn-square:hover .btn-square__text {
+        color: #fff;
+      }
+      .form_box__title {
+        margin-bottom: 0.625rem;
+        margin-top: 1.063rem;
+      }
+      .form_box__title p {
+        font-size: 1.125rem;
+        line-height: 140%;
+        font-weight: 600;
+        color: #545756;
+      }
+      #name {
+        width: 100%;
+        border: 1px solid rgba(211, 211, 211, 0.2);
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        padding-left: 1.5rem;
+        font-weight: 500;
+        font-size: 0.938rem;
+      }
+      #phone_number {
+        width: 100%;
+        border: 1px solid rgba(211, 211, 211, 0.2);
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        padding-left: 1.5rem;
+        font-weight: 500;
+        font-size: 0.938rem;
+      }
+      #e-mail {
+        width: 100%;
+        border: 1px solid rgba(211, 211, 211, 0.2);
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        padding-left: 1.5rem;
+        font-weight: 500;
+        font-size: 0.938rem;
+      }
+      #company {
+        width: 100%;
+        border: 1px solid rgba(211, 211, 211, 0.2);
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        padding-left: 1.5rem;
+        font-weight: 500;
+        font-size: 0.938rem;
+      }
+      #content {
+        width: 100%;
+        border: 1px solid rgba(211, 211, 211, 0.2);
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        padding-left: 1.5rem;
+        padding-top: 1.375rem;
+        font-weight: 500;
+        font-size: 0.938rem;
+        overflow-y: scroll;
+        resize: none;
+      }
+      .inquiry_btn {
+        padding: 2rem 0rem;
+        margin: auto;
+        text-align: center;
+      }
+      .btn-square__text {
+        color: #166642;
+        font-weight: 400;
+        font-size: 1.275rem;
+      }
+      input::placeholder {
+        color: #999999;
+      }
+      textarea::placeholder {
+        color: #999999;
+      }
+      span {
+        color: #166642;
+      }
+      .terms__box {
+        height: auto;
+        overflow-y: scroll;
+        margin-top: 1.063rem;
+        margin-bottom: 1.25rem;
+      }
+      .terms__agree {
+        gap: 0.313rem;
+      }
+      .terms__agree input[type='checkbox'] {
+        accent-color: #1c6343;
+      }
+    }
+  }
+  // sec02
+  .footer_container {
+    margin-top: 0;
+    .footer_text {
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+      padding-left: 4%;
+    }
+    .footer_img {
+      padding-bottom: 1.5rem;
+    }
+    .footer_text h2 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      padding-bottom: 0.838rem;
+    }
+    .footer_text p {
+      font-size: 0.875rem;
+      font-weight: 200;
+    }
+  }
+  // footer
+}
+@media (max-width: 384px) {
+}
 @media (max-width: 376px) {
   .wrapper {
     margin-top: 1.875rem;
