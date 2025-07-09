@@ -14,38 +14,81 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav class="navbar navbar-expand-lg bg-nav transparent-navbar fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="assets/images/logo.png" alt="logo-img">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavUser"
-                    aria-controls="navbarNavUser" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class='bx bx-menu'></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavUser">
-                    <ul class="navbar-nav ms-auto navbar__menu">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about_us.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="beplain_brand.html">Brand</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/beplain_product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/event.html">Event</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contact</a>
-                        </li>
-                    </ul>
+        <div class="wrapper">
+      <header>
+        <!-- Menu -->
+        <div class="bg bg-nav">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <!-- Nav Toggle Button -->
+              <button
+                class="navbar-toggler my-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#main_nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Nav Links -->
+              <div
+                class="collapse navbar-collapse justify-content-start justify-content-lg-between"
+                id="main_nav"
+              >
+                <div class="logo">
+                  <a href="/index.html">
+                    <img src="assets/images/logo.png" alt="logo-img" />
+                  </a>
                 </div>
-            </div>
-        </nav>
-        <!-- nav -->
+                <ul class="navbar-nav p-3 p-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/about_us.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <!-- Mega Menu -->
+                  <li class="nav-item dropdown ktm-mega-menu">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="/beplain_brand.html"
+                      data-bs-toggle="dropdown"
+                    >
+                      BRAND
+                    </a>
+                    <!-- Mega Menu -->
+                    <div class="dropdown-menu mega-menu p-3">
+                      <ul class="sub-title">
+                        <li><a href="/beplain_brand.html">Beplain</a></li>
+                        <li><a href="/skin1004_brand.html">Skin1004</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- Tree Menu -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/beplain_product.html"
+                      >PRODUCT
+                    </a>
+                    <!-- Dropdown -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/event.html">EVENT </a>
+                    <!-- Dropdown -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact </a>
+                    <!-- Dropdown -->
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Ends -->
+      </header>
+      <!-- nav -->
+
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -71,55 +114,66 @@
                 </div>
             </div>
         </div>
-        <div class="container event_box">
-            <div class="row">
-                <div class="col-4">
-                    <img src="assets/images/event01.png" alt="">
+         <div class="container event_main_container">
+            <div id="eventList" class="row">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <img src="assets/images/event01.png" alt="" class="img-fluid">
                     <div class="event-text">
                         <h3>[스킨1004]</h3>
                         <h4>마스크팩 홈케어</h4>
                         <h5>2025.05.01 ~ 2025.05.31</h5>
                     </div>
                 </div>
-                <div class="col-4">
-                    <img src="assets/images/event02.png" alt="">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <img src="assets/images/event02.png" alt="" class="img-fluid">
                     <div class="event-text">
                         <h3>[스킨1004]</h3>
                         <h4>선물세트 기획전</h4>
                         <h5>2025.05.01 ~ 2025.05.31</h5>
                     </div>
                 </div>
-                <div class="col-4">
-                    <img src="assets/images/event03.png" alt="">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <img src="assets/images/event03.png" alt="" class="img-fluid">
                     <div class="event-text">
                         <h3>[비플레인]</h3>
                         <h4>토너 1+1 기획전</h4>
                         <h5>2025.05.01 ~ 2025.05.31</h5>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container event_box">
-            <div class="row">
-                <div class="col-4">
-                    <img src="assets/images/event04.png" alt="">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <img src="assets/images/event04.png" alt="" class="img-fluid">
                     <div class="event-text">
                         <h3>[뮤즈]</h3>
                         <h4>신제품 체험단 모집</h4>
                         <h5>2025.05.01 ~ 2025.05.31</h5>
                     </div>
                 </div>
-                <div class="col-4">
-                    <img src="assets/images/event05.png" alt="">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <img src="assets/images/event05.png" alt="" class="img-fluid">
                     <div class="event-text">
                         <h3>[비플레인]</h3>
                         <h4>비플레인, 봄맞이 기획전</h4>
                         <h5>2025.05.01 ~ 2025.05.31</h5>
                     </div>
                 </div>
-
             </div>
         </div>
+
+    <nav aria-label="이벤트 페이지네이션" class="mt-5"> <!-- mt-5는 위쪽 마진 -->
+            <ul class="pagination justify-content-center" id="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="이전">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <a class="page-link" href="#" aria-label="다음">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
         <footer>
         <div class="footer_container">

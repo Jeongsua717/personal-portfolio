@@ -172,64 +172,202 @@
 // font
 
 body {
+  font-size: 16px;
   overflow-x: hidden;
+  background-color: #fffafa;
   width: 100%;
   font-family: 'Pretendard';
   position: relative;
-  img {
-    cursor: pointer;
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
   }
 }
+
 .wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   max-height: 830px;
   width: 100%;
-  .navbar {
-    font-family: 'Poppins', sans-serif;
-    min-height: 80px;
-  }
-  .navbar-brand {
-    padding: 0;
-    height: 40px;
-    max-width: 100%;
-  }
-  .bg-nav {
-    background-color: #fffafa;
-    border-bottom: 1px solid #ccc;
-  }
-  .transparent-navbar {
-    background-color: transparent;
-    box-shadow: none;
-    border-bottom: none;
-    transition: background-color 0.3s ease-in-out;
-  }
-  .navbar-toggler {
-    font-size: 1.25rem;
-    &:focus {
-      box-shadow: none;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .bg {
+      align-items: center;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    &.mega-menu-active {
+      .bg {
+        background-color: #ffffff;
+      }
+    }
+
+    // Nav-link 기본 스타일
+    .nav-link {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 300;
+      color: #3c3c3c !important;
+      transition: color 0.5s ease-in-out;
+    }
+
+    .logo {
+      padding-top: 0.625rem;
+    }
+
+    // 드롭다운 및 토글러 관련 공통 스타일
+    .dropdown-toggle::after {
+      content: none;
+    }
+    .dropdown-menu {
+      border: none;
+      background-color: #fff;
+    }
+    .sub-title li {
+      list-style: none;
+    }
+    .navbar-toggler {
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .navbar-nav .nav-item .nav-link {
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    a {
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    // 스크롤 전 (초기) 상태의 헤더 배경
+    .transparent-navbar {
+      background-color: transparent;
+    }
+
+    // 스크roll 후 (배경색이 생기는) 상태의 헤더 배경
+    .bg-nav {
+      background-color: #fff;
+    }
+
+    // --- 모바일 (992px 미만) 햄버거 메뉴 토글 시 전체 화면 메뉴 ---
+    @media (max-width: 991.98px) {
+      .navbar-collapse {
+        position: fixed; // 화면에 고정
+        top: 0;
+        left: 0;
+        width: 100vw; // 뷰포트 너비 전체
+        height: 100vh; // 뷰포트 높이 전체
+        background-color: #ffffff; // 배경색을 흰색으로 지정
+        z-index: 1001; // 헤더의 z-index(1000)보다 높게 설정하여 다른 요소 위에 표시
+        overflow-y: auto; // 메뉴 내용이 길어질 경우 스크롤 가능하게
+
+        // 초기 상태: 화면 위로 숨겨져 있고 투명
+        transform: translateY(-100%);
+        opacity: 0;
+        // 부드러운 애니메이션 효과
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
+        // 전체 화면 메뉴 내부 요소 정렬
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .logo {
+          margin-bottom: 1rem;
+          img {
+            max-height: 50px;
+            width: auto;
+          }
+        }
+        .sub-title {
+          padding-left: 20.5rem;
+        }
+        .navbar-nav {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+
+          .nav-item {
+            width: 100%;
+            text-align: center;
+            padding: 0.8rem 0;
+
+            .nav-link {
+              color: #3c3c3c !important;
+              font-size: 1.6rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      // 메뉴가 열렸을 때 (show 클래스가 붙었을 때)
+      .navbar-collapse.show {
+        transform: translateY(0); // 화면 아래로 슬라이드
+        opacity: 1; // 보이게
+      }
+    }
+
+    // --- 데스크톱 (992px 이상) 전용 스타일 ---
+    @media all and (min-width: 992px) {
+      .dropdown-menu {
+        display: block !important; // Bootstrap의 display: none을 오버라이드하여 항상 block 상태 유지
+        opacity: 0; // 초기에는 투명
+        visibility: hidden; // 초기에는 숨김
+        transform: translateY(10px); // 아래로 살짝 내려가 있는 상태에서 시작
+        transition: opacity 0.3s ease-out, visibility 0.3s ease-out,
+          transform 0.3s ease-out; // 부드러운 전환 효과
+
+        &.mega-menu {
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-color: #ffffff;
+        }
+      }
+      .nav-item.dropdown:hover > .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      // 나머지 데스크톱 스타일
+      .navbar-light .navbar-nav .nav-link {
+        padding-right: 1.875rem;
+      }
+      .mega-submenu {
+        left: 100%;
+        top: 0;
+        min-width: 25rem;
+      }
+      .ktm-mega-menu {
+        position: static;
+      }
+      .sub-title {
+        position: relative;
+        left: 66.5%;
+      }
+      .m-logo {
+        display: none;
+      }
     }
   }
-  .nav-link {
-    color: #3c3c3c;
-    font-size: 18px;
-    font-weight: 400;
-    transition: color 0.3s ease-in-out;
-  }
-  .nav-link:hover {
-    color: #1c6343;
-  }
-  .nav-item {
-    padding-right: 30px;
-  }
-  .nav-item a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-  }
 }
-// nav
 .title {
   font-size: 58px;
   margin-top: 200px;
@@ -241,7 +379,8 @@ body {
   color: inherit;
 }
 .tab_btn {
-  margin-top: 50px;
+  margin-top: 3.125rem;
+  margin-bottom: 3.125rem;
 }
 .tab_btn01 {
   background-color: #fff;
@@ -269,7 +408,13 @@ body {
   text-align: left;
 }
 // tab_btn
-
+.page-item.active .page-link {
+  background-color: #1c6343;
+  border-color: #1c6343;
+}
+.page-link {
+  color: #1c6343;
+}
 .event_box {
   margin-top: 80px;
 }
@@ -330,3 +475,183 @@ body {
   }
 }
 // footer
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-top: 11rem;
+    text-align: center;
+  }
+  .tab-button-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .tab_btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .tab_btn01 {
+    padding: 1.188rem 0.938rem 1.188rem 0.938rem;
+    border-radius: 3.125rem;
+  }
+  .tab_btn02 {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3.125rem;
+    padding: 1.188rem 0.938rem 1.188rem 0.938rem;
+  }
+  .tab_btn01 h2 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+  }
+  .tab_btn02 h2 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+  }
+  // tab_btn
+  .event_box {
+    margin-top: 3rem;
+  }
+  .event-text h3 {
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+  .event-text h4 {
+    font-weight: 400;
+    font-size: 1.375rem;
+  }
+  .event-text h5 {
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .event-text h3,
+  .event-text h4 {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .event-text h3 {
+    margin-right: 0.875rem;
+  }
+  .event-text {
+    margin-top: 2rem;
+  }
+  .footer_container {
+    margin-top: 3.125rem;
+    .footer_text {
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+      padding-left: 4%;
+    }
+    .footer_img {
+      padding-bottom: 1.5rem;
+    }
+    .footer_text h2 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      padding-bottom: 0.838rem;
+    }
+    .footer_text p {
+      font-size: 0.875rem;
+      font-weight: 200;
+    }
+  }
+  // footer
+}
+@media (max-width: 376px) {
+  .title {
+    font-size: 1.125rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .tab-button-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  .tab_btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .tab_btn01 {
+    color: #fffafa;
+    padding: 1.188rem 0rem 1.188rem 0rem;
+    border-radius: 3.125rem;
+  }
+  .tab_btn02 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d1cfcf;
+    border-radius: 3.125rem;
+    padding: 1.188rem 0rem 1.188rem 0rem;
+    color: #808080;
+  }
+  .tab_btn01 h2 {
+    font-size: 0.875rem;
+    font-weight: 200;
+    text-align: center;
+  }
+  .tab_btn02 h2 {
+    font-size: 0.875rem;
+    font-weight: 200;
+    text-align: center;
+  }
+  // tab_btn
+
+  .event_box {
+    margin-top: 3rem;
+  }
+  .event-text h3 {
+    color: #9c9c9c;
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+  .event-text h4 {
+    color: #3c3c3c;
+    font-weight: 400;
+    font-size: 1.375rem;
+  }
+  .event-text h5 {
+    color: #9c9c9c;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .event-text h3,
+  .event-text h4 {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .event-text h3 {
+    margin-right: 0.3rem;
+  }
+  .event-text {
+    margin-top: 1rem;
+  }
+  .footer_container {
+    margin-top: 3.125rem;
+    .footer_text {
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+      padding-left: 4%;
+    }
+    .footer_img {
+      padding-bottom: 1.3rem;
+      img {
+        width: 18%;
+      }
+    }
+    .footer_text h2 {
+      font-size: 0.875rem;
+      font-weight: 300;
+      padding-bottom: 0.628rem;
+    }
+    .footer_text p {
+      font-size: 0.75rem;
+      font-weight: 200;
+    }
+  }
+  // footer
+}

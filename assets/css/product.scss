@@ -183,85 +183,191 @@ body {
     text-decoration: none;
   }
 }
+
 .wrapper {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-height: 830px;
   max-width: 100%;
-  .navbar {
-    font-family: 'Poppins', sans-serif;
-    min-height: 80px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  .navbar-brand {
-    padding: 0;
-    height: 40px;
-    max-width: 100%;
-  }
-  .navbar-brand .logo-white {
-    display: block;
-  }
-  .navbar-brand .logo-black {
-    display: none;
-  }
-  .transparent-navbar {
-    background-color: transparent;
-    box-shadow: none;
-    border-bottom: none;
-  }
-  .scrolled-navbar {
-    background-color: #fffafa;
-    border-bottom: 1px solid #ccc;
-  }
-  .scrolled-navbar .navbar-brand .logo-white {
-    display: none;
-  }
-  .scrolled-navbar .navbar-brand .logo-black {
-    display: block;
-  }
-  .navbar-toggler {
-    font-size: 1.25rem;
-    &:focus {
-      box-shadow: none;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .bg {
+      align-items: center;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    &.mega-menu-active {
+      .bg {
+        background-color: #ffffff;
+      }
+    }
+
+    // Nav-link 기본 스타일
+    .nav-link {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 300;
+      color: #3c3c3c !important;
+      transition: color 0.5s ease-in-out;
+    }
+
+    .logo {
+      padding-top: 0.625rem;
+    }
+
+    // 드롭다운 및 토글러 관련 공통 스타일
+    .dropdown-toggle::after {
+      content: none;
+    }
+    .dropdown-menu {
+      border: none;
+      background-color: #fff;
+    }
+    .sub-title li {
+      list-style: none;
+    }
+    .navbar-toggler {
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .navbar-nav .nav-item .nav-link {
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    a {
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    // 스크롤 전 (초기) 상태의 헤더 배경
+    .transparent-navbar {
+      background-color: transparent;
+    }
+
+    // 스크roll 후 (배경색이 생기는) 상태의 헤더 배경
+    .bg-nav {
+      background-color: #fff;
+    }
+
+    // --- 모바일 (992px 미만) 햄버거 메뉴 토글 시 전체 화면 메뉴 ---
+    @media (max-width: 991.98px) {
+      .navbar-collapse {
+        position: fixed; // 화면에 고정
+        top: 0;
+        left: 0;
+        width: 100vw; // 뷰포트 너비 전체
+        height: 100vh; // 뷰포트 높이 전체
+        background-color: #ffffff; // 배경색을 흰색으로 지정
+        z-index: 1001; // 헤더의 z-index(1000)보다 높게 설정하여 다른 요소 위에 표시
+        overflow-y: auto; // 메뉴 내용이 길어질 경우 스크롤 가능하게
+
+        // 초기 상태: 화면 위로 숨겨져 있고 투명
+        transform: translateY(-100%);
+        opacity: 0;
+        // 부드러운 애니메이션 효과
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
+        // 전체 화면 메뉴 내부 요소 정렬
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .logo {
+          margin-bottom: 1rem;
+          img {
+            max-height: 50px;
+            width: auto;
+          }
+        }
+        .sub-title {
+          text-align: center;
+        }
+        .navbar-nav {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+
+          .nav-item {
+            width: 100%;
+            text-align: center;
+            padding: 0.8rem 0;
+
+            .nav-link {
+              color: #3c3c3c !important;
+              font-size: 1.6rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+
+      // 메뉴가 열렸을 때 (show 클래스가 붙었을 때)
+      .navbar-collapse.show {
+        transform: translateY(0); // 화면 아래로 슬라이드
+        opacity: 1; // 보이게
+      }
+    }
+
+    // --- 데스크톱 (992px 이상) 전용 스타일 ---
+    @media all and (min-width: 992px) {
+      .dropdown-menu {
+        display: block !important; // Bootstrap의 display: none을 오버라이드하여 항상 block 상태 유지
+        opacity: 0; // 초기에는 투명
+        visibility: hidden; // 초기에는 숨김
+        transform: translateY(10px); // 아래로 살짝 내려가 있는 상태에서 시작
+        transition: opacity 0.3s ease-out, visibility 0.3s ease-out,
+          transform 0.3s ease-out; // 부드러운 전환 효과
+
+        &.mega-menu {
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-color: #ffffff;
+        }
+      }
+      .nav-item.dropdown:hover > .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      // 나머지 데스크톱 스타일
+      .navbar-light .navbar-nav .nav-link {
+        padding-right: 1.875rem;
+      }
+      .mega-submenu {
+        left: 100%;
+        top: 0;
+        min-width: 25rem;
+      }
+      .ktm-mega-menu {
+        position: static;
+      }
+      .sub-title {
+        position: relative;
+        left: 66.5%;
+      }
+      .m-logo {
+        display: none;
+      }
     }
   }
-  .nav-link {
-    color: #fff;
-    font-size: 1.125rem;
-    transition: color 0.3s ease-in-out;
-  }
-  .scrolled-navbar .nav-link {
-    color: #3c3c3c;
-  }
-  .nav-link:hover {
-    color: #1c6343;
-    border-radius: 50px;
-    font-weight: 500;
-  }
-  .nav-item {
-    padding-right: 1.875rem;
-  }
-  .nav-item a {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.125rem;
-    font-weight: 300;
-  }
-  .main_title h1 {
-    color: #fff;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 140%;
-    margin: 0;
-    letter-spacing: 0.03em;
-  }
-  .main_title p {
-    color: #fff;
-    font-weight: 600;
-    padding-top: 30px;
-    font-size: 40px;
-    letter-spacing: 0.03em;
-  }
+
   .main-banner {
     width: 100%;
     background-repeat: no-repeat;
@@ -277,8 +383,8 @@ body {
     .main_title p {
       color: #fff;
       font-weight: 600;
-      padding-top: 30px;
-      font-size: 40px;
+      padding-top: 1.875rem;
+      font-size: 2.5rem;
       letter-spacing: 0.03em;
     }
   }
@@ -295,8 +401,8 @@ body {
     .main_title p {
       color: #fff;
       font-weight: 600;
-      padding-top: 30px;
-      font-size: 40px;
+      padding-top: 1.875rem;
+      font-size: 2.5rem;
       letter-spacing: 0.03em;
     }
     .logo {
@@ -434,15 +540,12 @@ body {
     color: #999;
     font-weight: 400;
     line-height: 200%;
-    margin-left: 2.063rem;
   }
   .product_explain p {
     font-size: 1.12rem;
     color: #999;
     font-weight: 400;
     line-height: 200%;
-    padding-left: 1.063rem;
-    white-space: nowrap;
   }
   .p-t-40 {
     padding-top: 2.5rem;
@@ -523,8 +626,8 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       overflow: hidden;
       text-decoration: none;
@@ -542,8 +645,8 @@ body {
     }
     .tab-button-link img {
       display: block;
-      max-width: 80%;
-      max-height: 80%;
+      max-width: 50%;
+      max-height: 50%;
       object-fit: contain;
       transition: color 0.3s ease, background-color 0.3s ease;
     }
@@ -585,7 +688,7 @@ body {
 
     .nav-tabs li a.nav-link.active {
       color: #8d6734;
-      font-weight: 700;
+      font-weight: 200;
       background-color: transparent;
       border-bottom: none;
     }
@@ -600,7 +703,6 @@ body {
       color: #3c3c3c;
       font-weight: 300;
       padding-top: 1.875rem;
-      white-space: nowrap;
     }
     .product_title p {
       font-size: 0.875rem;
@@ -613,22 +715,18 @@ body {
       color: #999;
       font-weight: 300;
       line-height: 140%;
-      white-space: nowrap;
     }
     .product_explain h5 {
       font-size: 0.875rem;
       color: #999;
       font-weight: 200;
       line-height: 140%;
-      margin-left: 2.063rem;
     }
     .product_explain p {
       font-size: 0.875rem;
       color: #999;
       font-weight: 200;
       line-height: 140%;
-      padding-left: 1.063rem;
-      white-space: nowrap;
     }
     .p-t-40 {
       padding-top: 2.5rem;
@@ -663,6 +761,7 @@ body {
     .top-banner {
       max-width: 100%;
       height: 230px;
+      margin-top: 30px;
       .main_title p {
         font-weight: 100;
         padding-top: 0.5rem;
@@ -746,7 +845,7 @@ body {
       border-radius: 0;
       color: #999;
       font-size: 0.875rem;
-      font-weight: 300;
+      font-weight: 200;
       padding: 0 0.5rem;
       white-space: nowrap;
       transition: color 0.3s ease, background-color 0.3s ease;
@@ -761,7 +860,7 @@ body {
 
     .nav-tabs li a.nav-link.active {
       color: #8d6734;
-      font-weight: 700;
+      font-weight: 300;
       background-color: transparent;
       border-bottom: none;
     }
@@ -776,40 +875,37 @@ body {
       color: #3c3c3c;
       font-weight: 300;
       padding-top: 1.25rem;
-      white-space: pre-line;
     }
     .product_title p {
       font-size: 0.75rem;
       color: #999;
       font-weight: 200;
       padding: 0.25rem 0 1.25rem 0;
-      white-space: nowrap;
     }
     .product_explain h1 {
       font-size: 0.875rem;
       color: #999;
       font-weight: 300;
       line-height: 140%;
-      white-space: nowrap;
     }
     .product_explain h5 {
       font-size: 0.625rem;
       color: #999;
       font-weight: 200;
       line-height: 140%;
-      margin-left: 2.063rem;
-      white-space: pre-line;
     }
     .product_explain p {
       font-size: 0.625rem;
       color: #999;
       font-weight: 200;
       line-height: 140%;
-      padding-left: 1.063rem;
-      white-space: pre-line;
     }
     .p-t-40 {
-      padding-top: 2.5rem;
+      padding-top: 1rem;
+    }
+    .product_img {
+      width: 50%;
+      margin: auto;
     }
   }
   // sec04

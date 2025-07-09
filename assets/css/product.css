@@ -174,78 +174,146 @@ body a {
   max-height: 830px;
   max-width: 100%;
 }
-.wrapper .navbar {
-  font-family: "Poppins", sans-serif;
-  min-height: 80px;
-  transition: background-color 0.3s ease-in-out;
+.wrapper header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
-.wrapper .navbar-brand {
-  padding: 0;
-  height: 40px;
-  max-width: 100%;
+.wrapper header .bg {
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
 }
-.wrapper .navbar-brand .logo-white {
-  display: block;
+.wrapper header.mega-menu-active .bg {
+  background-color: #ffffff;
 }
-.wrapper .navbar-brand .logo-black {
-  display: none;
-}
-.wrapper .transparent-navbar {
-  background-color: transparent;
-  box-shadow: none;
-  border-bottom: none;
-}
-.wrapper .scrolled-navbar {
-  background-color: #fffafa;
-  border-bottom: 1px solid #ccc;
-}
-.wrapper .scrolled-navbar .navbar-brand .logo-white {
-  display: none;
-}
-.wrapper .scrolled-navbar .navbar-brand .logo-black {
-  display: block;
-}
-.wrapper .navbar-toggler {
-  font-size: 1.25rem;
-}
-.wrapper .navbar-toggler:focus {
-  box-shadow: none;
-}
-.wrapper .nav-link {
-  color: #fff;
-  font-size: 1.125rem;
-  transition: color 0.3s ease-in-out;
-}
-.wrapper .scrolled-navbar .nav-link {
-  color: #3c3c3c;
-}
-.wrapper .nav-link:hover {
-  color: #1c6343;
-  border-radius: 50px;
-  font-weight: 500;
-}
-.wrapper .nav-item {
-  padding-right: 1.875rem;
-}
-.wrapper .nav-item a {
+.wrapper header .nav-link {
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
+  color: #3c3c3c !important;
+  transition: color 0.5s ease-in-out;
 }
-.wrapper .main_title h1 {
-  color: #fff;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 140%;
-  margin: 0;
-  letter-spacing: 0.03em;
+.wrapper header .logo {
+  padding-top: 0.625rem;
 }
-.wrapper .main_title p {
-  color: #fff;
-  font-weight: 600;
-  padding-top: 30px;
-  font-size: 40px;
-  letter-spacing: 0.03em;
+.wrapper header .dropdown-toggle::after {
+  content: none;
+}
+.wrapper header .dropdown-menu {
+  border: none;
+  background-color: #fff;
+}
+.wrapper header .sub-title li {
+  list-style: none;
+}
+.wrapper header .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.wrapper header .navbar-nav .nav-item .nav-link:focus {
+  outline: none;
+  box-shadow: none;
+}
+.wrapper header a:focus {
+  outline: none;
+  box-shadow: none;
+}
+.wrapper header .transparent-navbar {
+  background-color: transparent;
+}
+.wrapper header .bg-nav {
+  background-color: #fff;
+}
+@media (max-width: 991.98px) {
+  .wrapper header .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1001;
+    overflow-y: auto;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .wrapper header .navbar-collapse .logo {
+    margin-bottom: 1rem;
+  }
+  .wrapper header .navbar-collapse .logo img {
+    max-height: 50px;
+    width: auto;
+  }
+  .wrapper header .navbar-collapse .sub-title {
+    text-align: center;
+  }
+  .wrapper header .navbar-collapse .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .wrapper header .navbar-collapse .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 0;
+  }
+  .wrapper header .navbar-collapse .navbar-nav .nav-item .nav-link {
+    color: #3c3c3c !important;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .wrapper header .navbar-collapse.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media all and (min-width: 992px) {
+  .wrapper header .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform 0.3s ease-out;
+  }
+  .wrapper header .dropdown-menu.mega-menu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .wrapper header .nav-item.dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  .wrapper header .navbar-light .navbar-nav .nav-link {
+    padding-right: 1.875rem;
+  }
+  .wrapper header .mega-submenu {
+    left: 100%;
+    top: 0;
+    min-width: 25rem;
+  }
+  .wrapper header .ktm-mega-menu {
+    position: static;
+  }
+  .wrapper header .sub-title {
+    position: relative;
+    left: 66.5%;
+  }
+  .wrapper header .m-logo {
+    display: none;
+  }
 }
 .wrapper .main-banner {
   width: 100%;
@@ -263,8 +331,8 @@ body a {
 .wrapper .main-banner .main_title p {
   color: #fff;
   font-weight: 600;
-  padding-top: 30px;
-  font-size: 40px;
+  padding-top: 1.875rem;
+  font-size: 2.5rem;
   letter-spacing: 0.03em;
 }
 .wrapper .top-banner {
@@ -281,8 +349,8 @@ body a {
 .wrapper .top-banner .main_title p {
   color: #fff;
   font-weight: 600;
-  padding-top: 30px;
-  font-size: 40px;
+  padding-top: 1.875rem;
+  font-size: 2.5rem;
   letter-spacing: 0.03em;
 }
 .wrapper .top-banner .logo {
@@ -410,15 +478,12 @@ body a {
   color: #999;
   font-weight: 400;
   line-height: 200%;
-  margin-left: 2.063rem;
 }
 .sec04 .product_explain p {
   font-size: 1.12rem;
   color: #999;
   font-weight: 400;
   line-height: 200%;
-  padding-left: 1.063rem;
-  white-space: nowrap;
 }
 .sec04 .p-t-40 {
   padding-top: 2.5rem;
@@ -498,8 +563,8 @@ body a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     overflow: hidden;
     text-decoration: none;
@@ -517,8 +582,8 @@ body a {
   }
   .sec02 .tab-button-link img {
     display: block;
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 50%;
+    max-height: 50%;
     object-fit: contain;
     transition: color 0.3s ease, background-color 0.3s ease;
   }
@@ -555,7 +620,7 @@ body a {
   }
   .sec03 .nav-tabs li a.nav-link.active {
     color: #8d6734;
-    font-weight: 700;
+    font-weight: 200;
     background-color: transparent;
     border-bottom: none;
   }
@@ -567,7 +632,6 @@ body a {
     color: #3c3c3c;
     font-weight: 300;
     padding-top: 1.875rem;
-    white-space: nowrap;
   }
   .sec04 .product_title p {
     font-size: 0.875rem;
@@ -580,22 +644,18 @@ body a {
     color: #999;
     font-weight: 300;
     line-height: 140%;
-    white-space: nowrap;
   }
   .sec04 .product_explain h5 {
     font-size: 0.875rem;
     color: #999;
     font-weight: 200;
     line-height: 140%;
-    margin-left: 2.063rem;
   }
   .sec04 .product_explain p {
     font-size: 0.875rem;
     color: #999;
     font-weight: 200;
     line-height: 140%;
-    padding-left: 1.063rem;
-    white-space: nowrap;
   }
   .sec04 .p-t-40 {
     padding-top: 2.5rem;
@@ -626,6 +686,7 @@ body a {
   .wrapper .top-banner {
     max-width: 100%;
     height: 230px;
+    margin-top: 30px;
   }
   .wrapper .main-banner .main_title p,
   .wrapper .top-banner .main_title p {
@@ -707,7 +768,7 @@ body a {
     border-radius: 0;
     color: #999;
     font-size: 0.875rem;
-    font-weight: 300;
+    font-weight: 200;
     padding: 0 0.5rem;
     white-space: nowrap;
     transition: color 0.3s ease, background-color 0.3s ease;
@@ -720,7 +781,7 @@ body a {
   }
   .sec03 .nav-tabs li a.nav-link.active {
     color: #8d6734;
-    font-weight: 700;
+    font-weight: 300;
     background-color: transparent;
     border-bottom: none;
   }
@@ -732,40 +793,37 @@ body a {
     color: #3c3c3c;
     font-weight: 300;
     padding-top: 1.25rem;
-    white-space: pre-line;
   }
   .sec04 .product_title p {
     font-size: 0.75rem;
     color: #999;
     font-weight: 200;
     padding: 0.25rem 0 1.25rem 0;
-    white-space: nowrap;
   }
   .sec04 .product_explain h1 {
     font-size: 0.875rem;
     color: #999;
     font-weight: 300;
     line-height: 140%;
-    white-space: nowrap;
   }
   .sec04 .product_explain h5 {
     font-size: 0.625rem;
     color: #999;
     font-weight: 200;
     line-height: 140%;
-    margin-left: 2.063rem;
-    white-space: pre-line;
   }
   .sec04 .product_explain p {
     font-size: 0.625rem;
     color: #999;
     font-weight: 200;
     line-height: 140%;
-    padding-left: 1.063rem;
-    white-space: pre-line;
   }
   .sec04 .p-t-40 {
-    padding-top: 2.5rem;
+    padding-top: 1rem;
+  }
+  .sec04 .product_img {
+    width: 50%;
+    margin: auto;
   }
   .footer_container {
     margin-top: 3.125rem;

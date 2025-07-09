@@ -190,291 +190,180 @@ body {
   max-height: 830px;
   max-width: 100%;
 
-  .navbar {
-    font-family: 'Poppins', sans-serif;
-    min-height: 80px;
-    transition: background-color 0.3s ease-in-out;
-    &.menu-open {
-      background-color: #fffafa !important;
-    }
-    &-brand {
-      padding: 0;
-      height: 40px;
-      max-width: 100%;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 
-      img {
-        height: 100%;
-        width: auto;
+    .bg {
+      align-items: center;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    &.mega-menu-active {
+      .bg {
+        background-color: #ffffff;
       }
     }
 
-    &.bg-nav {
-      background-color: #fffafa;
-      border-bottom: 1px solid #ccc;
+    // Nav-link 기본 스타일
+    .nav-link {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.125rem;
+      font-weight: 300;
+      color: #3c3c3c !important;
+      transition: color 0.5s ease-in-out;
     }
 
-    &.transparent-navbar {
-      background-color: transparent;
-      box-shadow: none;
-      border-bottom: none;
-      transition: background-color 0.3s ease-in-out;
+    .logo {
+      padding-top: 0.625rem;
     }
 
-    &-toggler {
-      font-size: 1.25rem;
+    // 드롭다운 및 토글러 관련 공통 스타일
+    .dropdown-toggle::after {
+      content: none;
+    }
+    .dropdown-menu {
       border: none;
-      background-color: transparent;
-      color: #3c3c3c;
-      padding: 0;
-
+      background-color: #fff;
+    }
+    .sub-title li {
+      list-style: none;
+    }
+    .navbar-toggler {
       &:focus {
+        outline: none;
         box-shadow: none;
       }
-
-      /* 기본적으로 데스크톱에서는 햄버거 버튼 숨김 */
-      display: none;
-
-      /* 햄버거 아이콘과 X 아이콘의 초기 상태 (데스크톱) */
-      .bx-menu {
-        display: block;
+    }
+    .navbar-nav .nav-item .nav-link {
+      &:focus {
+        outline: none;
+        box-shadow: none;
       }
-      .bx-x {
-        display: none;
+    }
+    a {
+      &:focus {
+        outline: none;
+        box-shadow: none;
       }
+    }
+    // 스크롤 전 (초기) 상태의 헤더 배경
+    .transparent-navbar {
+      background-color: transparent;
+    }
 
-      /* 768px 이하 화면에서 적용될 스타일 (모바일 반응형) */
-      @media (max-width: 768px) {
-        display: block;
-        &[aria-expanded='true'] {
-          .bx-menu {
-            display: none;
-          }
-          .bx-x {
-            display: block;
+    // 스크roll 후 (배경색이 생기는) 상태의 헤더 배경
+    .bg-nav {
+      background-color: #fff;
+    }
+
+    // --- 모바일 (992px 미만) 햄버거 메뉴 토글 시 전체 화면 메뉴 ---
+    @media (max-width: 991.98px) {
+      .navbar-collapse {
+        position: fixed; // 화면에 고정
+        top: 0;
+        left: 0;
+        width: 100vw; // 뷰포트 너비 전체
+        height: 100vh; // 뷰포트 높이 전체
+        background-color: #ffffff; // 배경색을 흰색으로 지정
+        z-index: 1001; // 헤더의 z-index(1000)보다 높게 설정하여 다른 요소 위에 표시
+        overflow-y: auto; // 메뉴 내용이 길어질 경우 스크롤 가능하게
+
+        // 초기 상태: 화면 위로 숨겨져 있고 투명
+        transform: translateY(-100%);
+        opacity: 0;
+        // 부드러운 애니메이션 효과
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
+        // 전체 화면 메뉴 내부 요소 정렬
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .logo {
+          margin-bottom: 1rem;
+          img {
+            max-height: 50px;
+            width: auto;
           }
         }
-
-        &[aria-expanded='false'] {
-          .bx-menu {
-            display: block;
-          }
-          .bx-x {
-            display: none;
-          }
+        .sub-title {
+          padding-left: 20.5rem;
         }
-      }
-    }
-
-    .nav-link {
-      color: #3c3c3c;
-      font-size: 1.125rem;
-      font-weight: 400;
-      transition: color 0.3s ease-in-out;
-    }
-
-    .nav-item {
-      padding-right: 1.875rem;
-
-      a {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.125rem;
-        font-weight: 300;
-      }
-    }
-
-    .navbar__menu {
-      .dropdown {
-        position: static;
-
-        .dropdown-menu {
-          border: none;
-          background-color: #fffafa;
-          padding: 1.25rem;
+        .navbar-nav {
           width: 100%;
-          left: 0;
-          right: 0;
-          top: 100%;
-          margin-top: 0;
-          opacity: 0;
-          transform: translateY(-10px);
-          transition: opacity 0.3s ease, transform 0.3s ease;
-          display: block;
-          visibility: hidden;
-          pointer-events: none;
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
 
-          &[aria-labelledby='navbarDropdownBrand'] {
-            padding: 0.625rem;
-            .container {
-              width: auto;
-              max-width: 100%;
-            }
-          }
-
-          .brand-list {
-            padding: 1.25rem;
-          }
-
-          .brand-item {
-            display: flex;
-            flex-direction: column;
-            color: #333;
-            transition: color 0.3s ease;
+          .nav-item {
+            width: 100%;
             text-align: center;
-            padding-left: 30rem;
-            padding-bottom: 1.25rem;
+            padding: 0.8rem 0;
 
-            &:hover {
-              color: #166642;
-            }
-
-            span {
-              font-size: 1rem;
+            .nav-link {
+              color: #3c3c3c !important;
+              font-size: 1.6rem;
               font-weight: 500;
             }
           }
-
-          h5 {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            color: #555;
-          }
-
-          ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-
-            li {
-              margin-bottom: 0.5rem;
-
-              a {
-                color: #666;
-                padding-left: 50rem;
-
-                &:hover {
-                  color: #166642;
-                }
-              }
-            }
-          }
-
-          img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 0.625rem;
-          }
-        }
-
-        &.show > .dropdown-menu {
-          opacity: 1;
-          transform: translateY(0);
-          visibility: visible;
-          pointer-events: auto;
         }
       }
 
-      .nav-item {
-        .nav-link {
-          position: relative;
-
-          &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -0.313rem;
-            width: 0;
-            height: 2px;
-            background-color: #333;
-            transition: width 0.3s ease-in-out;
-          }
-
-          &.dropdown-toggle::after {
-            display: none !important;
-          }
-        }
-
-        &.dropdown.show > .nav-link::after {
-          width: 100%;
-        }
+      // 메뉴가 열렸을 때 (show 클래스가 붙었을 때)
+      .navbar-collapse.show {
+        transform: translateY(0); // 화면 아래로 슬라이드
+        opacity: 1; // 보이게
       }
     }
 
-    /* 768px 이하 화면에서 적용될 스타일 (모바일 반응형) */
-    @media (max-width: 768px) {
-      .navbar-collapse {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #fffafa;
-        z-index: 1000;
-        padding: 0.938rem 0;
-        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-        transform: translateY(-10px);
-        opacity: 0;
-        pointer-events: none;
-      }
+    // --- 데스크톱 (992px 이상) 전용 스타일 ---
+    @media all and (min-width: 992px) {
       .dropdown-menu {
-        opacity: 0;
+        display: block !important; // Bootstrap의 display: none을 오버라이드하여 항상 block 상태 유지
+        opacity: 0; // 초기에는 투명
+        visibility: hidden; // 초기에는 숨김
+        transform: translateY(10px); // 아래로 살짝 내려가 있는 상태에서 시작
+        transition: opacity 0.3s ease-out, visibility 0.3s ease-out,
+          transform 0.3s ease-out; // 부드러운 전환 효과
+
+        &.mega-menu {
+          left: 0;
+          right: 0;
+          width: 100%;
+          background-color: #ffffff;
+        }
       }
-      .navbar-collapse.show {
-        display: block;
-        transform: translateY(0);
+      .nav-item.dropdown:hover > .dropdown-menu {
         opacity: 1;
-        pointer-events: auto;
+        visibility: visible;
+        transform: translateY(0);
       }
 
-      .navbar-nav {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: 0;
+      // 나머지 데스크톱 스타일
+      .navbar-light .navbar-nav .nav-link {
+        padding-right: 1.875rem;
       }
-
-      .nav-item {
-        width: 100%;
-        text-align: center;
-        padding-right: 0;
-        margin-bottom: 0.625rem;
-        border-bottom: 1px solid #ddd;
+      .mega-submenu {
+        left: 100%;
+        top: 0;
+        min-width: 25rem;
       }
-
-      .nav-link {
-        padding: 0.625rem 1.25rem;
-        display: block;
-        font-size: 1.125rem;
-        color: #333;
+      .ktm-mega-menu {
+        position: static;
       }
-
-      /* 모바일에서 너무 큰 패딩 제거 */
-      .brand-item {
-        padding-left: 1.25rem !important;
-        padding-bottom: 0.938rem;
+      .sub-title {
+        position: relative;
+        left: 66.5%;
       }
-
-      .dropdown-menu {
-        padding: 0 !important;
-        width: 100% !important;
-        left: auto !important;
-        right: auto !important;
-        top: auto !important;
-        box-shadow: none !important;
-        background-color: transparent !important;
+      .m-logo {
         display: none;
-        position: static !important;
-      }
-
-      .dropdown-menu.show {
-        display: block;
-      }
-
-      ul {
-        padding-left: 1.25rem !important;
-      }
-
-      ul li a {
-        padding-left: 1.25rem !important;
       }
     }
   }
@@ -879,8 +768,9 @@ body {
   }
   // footer
 }
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .wrapper {
+    margin-top: 1.875rem;
     .main-banner {
       max-width: 100%;
       height: 230px;
@@ -915,12 +805,7 @@ body {
         color: #3c3c3c;
       }
       .sec02_sub_title {
-        background-image: url('../images/contact_sub_img.png');
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 150px;
-        margin: auto;
-        padding-bottom: 1.875rem;
+        display: none;
       }
       .sec02_sub_title h1 {
         font-size: 1.125rem;
@@ -938,7 +823,7 @@ body {
         background-color: #fffafa;
         border-radius: 10px;
         padding: 1.125rem 1.5rem;
-        margin-top: 1.875rem;
+        margin-top: 0;
       }
       .btn-square {
         border: 1px solid rgb(22, 102, 66);

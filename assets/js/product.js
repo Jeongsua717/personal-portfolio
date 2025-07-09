@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    AOS.init({
-        offset: 300,
-        duration: 800,
-        once: true
-    });
+  AOS.init({
+    duration: 800,
+  });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.getElementById('main_nav');
 
-window.addEventListener('scroll', function () {
-    let navbar = document.querySelector('.navbar');
-    let scrollPosition = window.scrollY;
-    if (scrollPosition > 100) {
-        navbar.classList.add('scrolled-navbar');
-        navbar.classList.remove('transparent-navbar');
+  navbarToggler.addEventListener('click', function () {
+    if (navbarCollapse.classList.contains('show')) {
+      navbarCollapse.classList.remove('show');
+      navbarToggler.setAttribute('aria-expanded', 'false');
     } else {
-        navbar.classList.remove('scrolled-navbar');
-        navbar.classList.add('transparent-navbar');
+      navbarCollapse.classList.add('show');
+      navbarToggler.setAttribute('aria-expanded', 'true');
     }
+  });
 });

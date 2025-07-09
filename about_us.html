@@ -17,59 +17,79 @@
 
 <body>
 <div class="wrapper">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-nav transparent-navbar fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="/index.html">
-                    <img src="assets/images/muse_white_logo.png" alt="logo-img">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavUser"
-                    aria-controls="navbarNavUser" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class='bx bx-menu'></i>
-                    <i class='bx bx-x'></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavUser">
-                    <ul class="navbar-nav ms-auto navbar__menu">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about_us.html">About Us</a>
-                        </li>
-                        <!-- Brand 메뉴 -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/beplain_brand.html" id="navbarDropdownBrand"
-                                role="button">
-                                Brand
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownBrand">
-                                <div class="container">
-                                    <div class="brand-list align-items-center">
-                                        <!-- beplain 브랜드 -->
-                                        <a href="/beplain_brand.html" class="brand-item">
-                                            <span>Beplain</span>
-                                        </a>
-                                        <!-- skin1004 브랜드 -->
-                                        <a href="/skin1004_brand.html" class="brand-item">
-                                            <span>Skin1004</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/beplain_product.html">PRODUCT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/event.html">EVENT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+      <header>
+        <!-- Menu -->
+        <div class="bg bg-nav">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <!-- Nav Toggle Button -->
+              <button
+                class="navbar-toggler my-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#main_nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-        <!-- nav -->
+              <!-- Nav Links -->
+              <div
+                class="collapse navbar-collapse justify-content-start justify-content-lg-between"
+                id="main_nav"
+              >
+                <div class="logo">
+                  <a href="/index.html">
+                    <img src="assets/images/logo.png" alt="logo-img" />
+                  </a>
+                </div>
+                <ul class="navbar-nav p-3 p-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/about_us.html"
+                      >About Us</a
+                    >
+                  </li>
+                  <!-- Mega Menu -->
+                  <li class="nav-item dropdown ktm-mega-menu">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="/beplain_brand.html"
+                      data-bs-toggle="dropdown"
+                    >
+                      BRAND
+                    </a>
+                    <!-- Mega Menu -->
+                    <div class="dropdown-menu mega-menu p-3">
+                      <ul class="sub-title">
+                        <li><a href="/beplain_brand.html">Beplain</a></li>
+                        <li><a href="/skin1004_brand.html">Skin1004</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- Tree Menu -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/beplain_product.html"
+                      >PRODUCT
+                    </a>
+                    <!-- Dropdown -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/event.html">EVENT </a>
+                    <!-- Dropdown -->
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact </a>
+                    <!-- Dropdown -->
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Ends -->
+      </header>
+      <!-- nav -->
         <section class="main-banner" id="main-banner">
             <div class="main_container container">
                 <div class="row">
